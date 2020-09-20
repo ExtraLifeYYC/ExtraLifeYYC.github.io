@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- The above 3 meta tags *must* come first in the head -->
+
+    <title>{{site.title}} - {{ page.title }}</title>
+    <meta name="description" content="{{ site.description }}"/>
+    <meta name="keywords" content="{{ site.keywords }}"/>
+    <meta name="author" content="{{ site.author }}"/>
+
+    {% include head_twittercard.html %}
+    {% include head_facebookcard.html %}
+    {% include head_favicons.html %}
+    {% include head_styles.html %}
+
+  </head>
+  <body>
+    <div class="lgx-container ">
+        <!-- ***  ADD YOUR SITE CONTENT HERE *** -->
+    {% include navigation.html %}
+    {% include body_banner.html %}
+    {% include body_about.html %}
+    {% include body_speakers.html %}
+    {% include body_schedule.html %}
+    {{ content }}
+
+    {% include footer_sosumi.html %}
+    </div>
+        <!--//.LGX SITE CONTAINER-->
+    {% include footer_javascript.html %}
+
+  </body>
+</html>

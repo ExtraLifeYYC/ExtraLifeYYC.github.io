@@ -1,0 +1,148 @@
+.lgx-testimonial {
+  background: url('http://placehold.it/1920x1000') bottom center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .lgx-inner {
+    .bg-rgba(@white-color, .95);
+  }
+}
+.lgx-testimonial-black {
+  .lgx-inner {
+    .bg-rgba(@black-color, .9);
+  }
+}
+
+blockquote.lgx-testi-single {
+  padding: 36px 13% 0;
+  .font-size(20);
+  font-weight: 400;
+  line-height: 3rem;
+  margin: 0;
+  p {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    position: relative;
+    z-index: 1;
+    font-family: @lgx-base-font;
+  }
+  span {
+    font-family: @lgx-heading-font;
+    color: @brand-color;
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  .author {
+    display: inline-block;
+    margin-top: 2.6rem;
+    img {
+      border-radius: 50%;
+    }
+    .title {
+    text-transform: uppercase;
+    }
+    .rate {
+      i {
+        .font-noline(1.6);
+        color: #ffaf0f;
+      }
+    }
+  }
+
+  &:after {
+    display: none;
+  }
+  &:before {
+    content: "";
+    background: url('../img/quote.png') center left no-repeat;
+    position:absolute;
+    left: 0;
+    top: -1px;
+    right: 0;
+    width: 115px;
+    height: 81px;
+    text-align: center;
+    margin:  0 auto;
+    z-index: 0;
+  }
+}
+
+.lgx-testi-single {
+  .author {
+    display: inline-block;
+    img {
+
+    }
+  }
+}
+
+
+.lgx-owltestimonial-box {
+  .item {
+    margin: 0 15px;
+  }
+  blockquote.lgx-testi-single {
+    .transition-duration(@duration: 0.3s);
+    background: @white-color;
+    padding: 8rem 4.2rem 4.2rem 4.2rem;
+    .font-size(16);
+    font-weight: 300;
+    line-height: 2.6rem;
+    margin: 0;
+    display: block;
+    p {
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      position: relative;
+      z-index: 1;
+    }
+    p span {
+      line-height: 2.4rem;
+      margin-bottom: 1rem;
+    }
+    .author {
+      display: inline-block;
+      margin-top: 2.6rem;
+      text-align: center;
+      img {
+        border-radius: 50%;
+        max-width: 70px;
+        margin: 0 auto;
+      }
+      .title {
+        text-transform: uppercase;
+        .font-noline(1.4);
+      }
+      .rate {
+        i {
+          .font-noline(1.6);
+          color: #ffaf0f;
+        }
+      }
+    }
+    &:before {
+      top: 48px;
+    }
+    &:hover {
+      background: @brand-color;
+      p {
+        color: @white-color;
+      }
+      p span {
+        color: @white-color;
+      }
+      &:before {
+        opacity: .15;
+      }
+      .author {
+        img {
+        }
+      }
+    }
+  }
+}
+
+

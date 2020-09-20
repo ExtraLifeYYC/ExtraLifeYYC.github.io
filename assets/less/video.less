@@ -1,0 +1,172 @@
+.lgx-video {
+  background: url('http://placehold.it/1920x800') top center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .lgx-inner {
+    .bg-rgba(@black-color, 0.8);
+    padding: 20rem 0 28rem;
+  }
+  .lgx-video-area {
+    //padding: 0;
+  }
+}
+
+.lgx-video2 {
+  background: url('http://placehold.it/1920x800') top center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .lgx-inner {
+    .bg-rgba(@brand-color, 0.8);
+  }
+}
+
+.lgx-video-christmas {
+  background: url('http://placehold.it/1920x800') center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .lgx-inner {
+    .bg-rgba(@brand-color, 0.5);
+  }
+}
+
+/*.lgx-news-christmas {
+  .lgx-inner {
+
+  }
+}*/
+
+
+
+//VIDEO
+.lgx-video-area {
+  padding: 6.8px 0;
+  display: block;
+  //margin-bottom: 11rem;
+  figure {
+    position: relative;
+    border-radius: 6px;
+    img {
+      border-radius: 6px;
+    }
+    figcaption {
+      .bg-rgba(@black-color, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .video-icon {
+        display: table;
+        height: 100%;
+        width: 100%;
+        .lgx-vertical {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+        }
+          i {
+            display: inline-block;
+            background: @white-color;
+            color: @black-color;
+            margin: 0 30px;
+            border-radius: 50%;
+            height: 90px;
+            width: 90px;
+            text-align: center;
+            line-height: 92px;
+            font-size: 20px;
+            padding-left: 10px;
+            .transition-duration(@duration: 0.3s);
+          }
+          &:hover {
+            i {
+              background: @white-color;
+              color: @brand-color;
+            }
+            &:before {
+              border: 5px solid rgba(255,255,255, 0);
+            }
+            &:after {
+              .bg-rgba(@white-color, 0);
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+.lgx-modal {
+  .bg-rgba(@black-color, 0.8);
+  .modal-dialog {
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+    .modal-content {
+      background: transparent;
+      box-shadow: none;
+      border: 0;
+      width: 100%;
+      .modal-header {
+        border-bottom: 0;
+        .close {
+          margin-top: -36px;
+          font-size: 30px;
+          color: @white-color;
+          padding: 7px 14px 8px;
+          border-radius: 50%;
+          opacity: .8;
+          -webkit-transition: all 0.2s ease-in-out 0s;
+          -moz-transition: all 0.2s ease-in-out 0s;
+          -ms-transition: all 0.2s ease-in-out 0s;
+          -o-transition: all 0.2s ease-in-out 0s;
+          transition: all 0.2s ease-in-out 0s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+      .modal-body {
+        width: 70%;
+        margin: 0 auto;
+        background: @black-color;
+        iframe {
+          width: 100%;
+          height: 650px;
+          border: 0;
+        }
+      }
+    }
+  }
+}
+
+.lgx-modal .modal-dialog .modal-content .modal-header .close {
+  display: block !important;
+}
+
+
+.lgx-about-video {
+  .lgx-video-area {
+    margin-bottom: 0;
+  }
+}
+
+
+.lgx-video-area-center {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.lgx-about-video-center {
+  .lgx-video-area-center {
+    margin-bottom: 4.2rem ;
+  }
+}
+
+
+

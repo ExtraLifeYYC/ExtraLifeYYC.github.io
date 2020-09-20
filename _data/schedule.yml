@@ -1,0 +1,32 @@
+day:
+  - date: Nov 7, 2020
+    id: home
+    events:
+      - name: Opening Ceremony
+        start: 2:00pm
+        end: 2:30pm
+        host: Cody & Todd of Extra Life YYC
+        description: We begin the day with a quick opening cermony where you are introduced to all of the hosts for the next 24 hours. Learn more about the Alberta Children's Hospital Foundation and what your donations do to help kids in need.
+        location: twitch.tv/extralifeyyc
+      - name: Smash Ultimate
+        start: 2:30pm
+        end: 5:00pm
+        host: Alberta Esports Association (AESA)
+        description: We begin the day with a quick opening cermony where you are introduced to all of the hosts for the next 24 hours. Learn more about the Alberta Children's Hospital Foundation and what your donations do to help kids in need.
+        location: twitch.tv/extralifeyyc
+  - date: Nov 8, 2020
+    id: menu1
+    events:
+      - name: Opening Ceremony Day 2
+        start: 2:00pm
+        end: 2:30pm
+        host: Cody & Todd of Extra Life YYC
+        description: We begin the day with a quick opening cermony where you are introduced to all of the hosts for the next 24 hours. Learn more about the Alberta Children's Hospital Foundation and what your donations do to help kids in need.
+        location: twitch.tv/extralifeyyc
+      - name: Smash Ultimate
+        start: 2:30pm
+        end: 5:00pm
+        host: Alberta Esports Association (AESA)
+        description: We begin the day with a quick opening cermony where you are introduced to all of the hosts for the next 24 hours. Learn more about the Alberta Children's Hospital Foundation and what your donations do to help kids in need.
+        location: twitch.tv/extralifeyyc
+

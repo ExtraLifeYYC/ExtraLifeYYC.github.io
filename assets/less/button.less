@@ -1,0 +1,244 @@
+
+
+.mfp-close:hover {
+  background: transparent;
+}
+
+
+
+.section-btn-area {
+  text-align: center;
+  display: block;
+  margin-top: 2.6rem;
+}
+
+
+
+//
+
+.wpcf7-submit,
+.lgx-submit,
+button,
+.lgx-btn {
+  overflow: hidden;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  position: relative;
+  color: @white-color;
+  font-weight: 400;
+  font-size: 14px;
+  background: @white-color;
+  margin: 0 auto;
+  //box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  font-family: @lgx-heading-font;
+  //border-radius: 16px;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  letter-spacing: .1rem;
+  background: @brand-color;
+
+
+  .transition-duration(@duration: 0.3s);
+  //box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+
+  -webkit-box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.4);
+  -moz-box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.4);
+  box-shadow: 0 8px 6px -6px rgba(50, 51, 51, 0.4);
+
+  /*&:before {
+    content: "\f101";
+    font-family: FontAwesome;
+    .font-size(17);
+    right: 19px;
+    position: absolute;
+    top: 14px;
+    //display: none;
+  }*/
+
+  //box-shadow: 6px 11px 24px -16px rgba(0, 0, 0, 0.75);
+  /*background-image: linear-gradient(to right, @brand-color 0%, @brand-color 51%, @brand-color2 100%);*/
+  &:hover {
+    color: @white-color;
+    //background: @brand-color3;
+    //font-weight: 700;
+    border-radius: 16px;
+    .transition-duration(@duration: 0.3s);
+    //box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+
+
+
+.wpcf7-submit span,
+.lgx-submit span,
+button span,
+.lgx-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.wpcf7-submit:after,
+.lgx-submit:after,
+button:after,
+.lgx-btn:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 14px;
+  //height: 490%;
+  height: 200px;
+  //height: 879%;
+  //width: 152%;
+  width: 200px;
+  background: url(../img/dots3.png) 0 0 repeat;
+  background: @black-color;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  opacity: .15;
+  //border-radius: 25%;
+}
+
+.wpcf7-submit:hover:after,
+.lgx-submit:hover:after,
+button:hover:after,
+.lgx-btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  height: 604%;
+  width: 300px;
+  left: 43px;
+  border-radius: 100%;
+}
+
+
+
+.lgx-btn-sm {
+  padding: .8rem 2.6rem;
+  font-size: 12px;
+}
+.lgx-btn-red {
+  background: @brand-color2;
+  //color: @brand-color2;
+  &:hover {
+    //background: @brand-color3;
+  }
+}
+.lgx-btn-red:after {
+  //background: @brand-color2;
+}
+
+.lgx-btn-yellow {
+  background: @brand-color3;
+  &:hover {
+    //color: @black-color;
+
+  }
+}
+.lgx-btn-yellow:after {
+  //background: @brand-color3;
+}
+
+.lgx-btn-black {
+  background: @black-color;
+  &:hover {
+    //color: @black-color;
+
+  }
+}
+.lgx-btn-black:after {
+  background: @white-color;
+}
+
+.section-btn-area {
+  .lgx-btn {
+    margin-right: .5rem;
+  }
+}
+
+
+.lgx-btn-white {
+  background: @white-color;
+  color: @brand-color;
+  &:after {
+    background: url(../img/dots4.png) 0 0 repeat;
+    background: @border-color;
+    opacity: .3;
+  }
+  &:hover {
+    color: @brand-color;
+  }
+}
+
+.mfp-wrap {
+  .wpcf7-submit:after,
+  .lgx-submit:after,
+  button:after,
+  .lgx-btn:after {
+    background: none;
+    position: static;
+  }
+  .mfp-arrow-left::after,
+  .mfp-arrow-left .mfp-a {
+    border-right: none;
+  }
+  .mfp-arrow-right::after, .mfp-arrow-right .mfp-a {
+    border-left: none;
+  }
+  .mfp-arrow {
+    height: auto;
+    background: @brand-color3;
+    border-radius: 16px;
+  }
+  .mfp-arrow::before,
+  .mfp-arrow::after,
+  .mfp-arrow .mfp-b,
+  .mfp-arrow .mfp-a {
+    top: -25px;
+  }
+}
+
+
+.sponsor-btn-area {
+  margin-top: 4.2rem;
+}
+.schedule-btn-area {
+  margin-top: 4.2rem;
+}
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------
+    Extra small devices (phones, less UP TO 767px)
+ ----------------------------------------------------------------------*/
+@media (max-width : @screen-xs-max) {
+  /************** 767 GLOBAl USE***********/
+  .lgx-btn {
+    font-size: 12px;
+    padding: .6rem 2rem;
+    letter-spacing: 0rem;
+  }
+  /************** 767 GLOBAl USE END***********/
+
+}/*767 END*/
+
+
+
+
+
+
+
+
+

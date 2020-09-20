@@ -1,0 +1,549 @@
+
+.lgx-registration {
+  background: @brand-color;
+}
+.lgx-registration2 {
+  background: url('http://placehold.it/1920x1000') bottom center no-repeat fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .lgx-inner {
+    .bg-rgba(@brand-color, 0.9);
+  }
+}
+
+.lgx-registration3 {
+  background: @black-color;
+}
+
+.lgx-registration4 {
+  background: url('http://placehold.it/1920x1000') bottom center no-repeat fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .lgx-inner {
+    padding: 0;
+    .bg-rgba(@black-color, 0.9);
+  }
+}
+
+.lgx-registration-christmas {
+  background: url('http://placehold.it/1920x800') center center no-repeat fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .lgx-inner {
+    background: url('../img/ice-down-ash.png') top center repeat-x;
+    -webkit-background-size: auto auto, cover;
+    -o-background-size: auto auto, cover;
+    -moz-background-size: auto auto, cover;
+    background-size: auto auto, cover;
+    padding-bottom: 0;
+    .lgx-registration-area {
+      position: relative;
+      margin-bottom: -25rem;
+    }
+  }
+}
+
+
+
+.lgx-registration-area {
+  display: flex;
+  align-items: center;
+  .lgx-single-registration {
+    .transition-duration(@duration: 0.3s);
+    flex: 1;
+    text-align: center;
+    color: @white-color;
+    overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+    margin: 0 .8rem;
+    -moz-box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.1);
+    -webkit-box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.1);
+    box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.1);
+    &:after {
+      content: "";
+      position: absolute;
+      left: 27%;
+      bottom: -145%;
+      height: 150%;
+      width: 150%;
+      background: url(../img/dots2.png) 0 0 repeat;
+      -webkit-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+      transform: translateX(-98%) translateY(-25%) rotate(45deg);
+      .transition-duration(@duration: 0.3s);
+      z-index: 0;
+    }
+    .lgx-btn {
+      background: @brand-color2;
+      &:hover {
+        background: @brand-color3;
+      }
+    }
+    .lgx-single-registration-inner {
+      padding: 4.2rem 2rem 6.8rem;
+      //.transition-duration(@duration: 0.3s);
+      position: relative;
+      z-index: 3;
+    }
+    .single-top {
+      .title {
+        .font-size(26);
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @white-color;
+        a {
+          color: inherit;
+        }
+      }
+      p {
+        font-family: @lgx-heading-font;
+        color: @white-color;
+        letter-spacing: .06rem;
+        opacity: .7;
+      }
+      .price {
+        font-family: @lgx-base-font;
+        color: @brand-color3;
+        .font-size(68);
+        line-height: 8rem;
+        font-weight: 900;
+        i {
+          font-family: @lgx-base-font;
+          .font-size(26);
+          font-weight: 300;
+          color: @white-color;
+          font-style: normal;
+          position: relative;
+          top: -30px;
+        }
+        span {
+          font-family: @lgx-base-font;
+          .font-size(20);
+          font-weight: 300;
+          color: @white-color;
+        }
+      }
+    }
+    .single-bottom {
+      ul {
+        margin-top: 2.6rem;
+        margin-bottom: 5rem;
+        li {
+          .font-size(16);
+          font-weight: 300;
+          margin-bottom: .4rem;
+        }
+      }
+    }
+    &:hover {
+      .bg-rgba(@white-color, 1);
+      -moz-box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.3);
+      -webkit-box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.3);
+      box-shadow: 0 1px 15px 1px rgba(52, 40, 104, 0.3);
+      .lgx-single-registration-inner {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        animation-duration: 600ms;
+        animation-timing-function: linear;
+      }
+      .single-top {
+        .title {
+          color: @brand-color;
+          a {
+            color: inherit;
+          }
+        }
+        p {
+          color: @black-color;
+        }
+        .price {
+          color: @brand-color3;
+          i {
+            color: @black-color;
+            opacity: .4;
+          }
+          span {
+            color: @black-color;
+            opacity: .7;
+          }
+        }
+      }
+      .single-bottom {
+        ul {
+          li {
+            color: @black-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.lgx-registration-area2 {
+  .lgx-single-registration {
+    border: 4px solid @white-color;
+    border-radius: 8px;
+    margin: 0 1rem;
+  }
+}
+
+.lgx-registration-area-nogap {
+  .lgx-single-registration {
+    border-radius: 0;
+    margin: 0;
+  }
+}
+
+
+
+.lgx-registration-area3 {
+  .lgx-single-registration {
+    &:nth-child(1) {
+      background: @brand-color3;
+      .single-top .title {
+        color: @brand-color3;
+      }
+    }
+    &:nth-child(2) {
+      background: @brand-color;
+      .single-top .title {
+        color: @brand-color;
+      }
+    }
+    &:nth-child(3) {
+      background: #00acee;
+      .single-top .title {
+        color: #00acee;
+      }
+    }
+    &:nth-child(4) {
+      background: #6ba229;
+      .single-top .title {
+        color: #6ba229;
+      }
+    }
+    .single-top {
+      .bg-rgba(@white-color, .5);
+      min-height: 210px;
+      max-width: 210px;
+      border-radius: 50%;
+      margin: 0 auto;
+      -moz-box-shadow: 0 13px 35px rgba(0,0,0,0.05);
+      -webkit-box-shadow: 0 13px 35px rgba(0,0,0,0.05);
+      -o-box-shadow: 0 13px 35px rgba(0,0,0,0.05);
+      box-shadow: 0 13px 35px rgba(0,0,0,0.05);
+      .price {
+        line-height: 8rem;
+        color: @brand-color2;
+      }
+      .title {
+        padding-top: 5rem;
+        //color: @white-color;
+      }
+    }
+    &:hover {
+      .single-top {
+        .bg-rgba(@white-color, 1);
+      }
+      .single-bottom ul li {
+        color: @white-color;
+      }
+    }
+  }
+  .recommended .lgx-btn {
+    background: @brand-color2;
+    &:hover {
+      background: @brand-color3;
+    }
+  }
+}
+
+
+
+.lgx-registration-area {
+  display: flex;
+  align-items: center;
+  .lgx-single-registration-christmas {
+    background: @brand-color;
+    .transition-duration(@duration: 0.3s);
+    flex: 1;
+    text-align: center;
+    color: @white-color;
+    overflow: hidden;
+    -moz-box-shadow: 0 0 16px #ccc;
+    -webkit-box-shadow: 0 0 16px #ccc;
+    -o-box-shadow: 0 0 16px #ccc;
+    box-shadow: 0 0 16px #ccc;
+    .lgx-btn {
+      background: @brand-color2;
+      &:hover {
+        background: @brand-color3;
+      }
+    }
+    .lgx-single-registration-inner {
+      padding: 4.2rem 2rem 9rem;
+      background: url('../img/registration-style-christmas.png') bottom center no-repeat;
+      -webkit-background-size: auto auto, cover;
+      -o-background-size: auto auto, cover;
+      -moz-background-size: auto auto, cover;
+      background-size: auto auto, cover;
+    }
+    .single-top {
+      .title {
+        .font-size(26);
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @white-color;
+        a {
+          color: inherit;
+        }
+      }
+      .price {
+        font-family: @lgx-heading-font;
+        color: @brand-color3;
+        .font-size(68);
+        font-weight: 900;
+        i {
+          font-weight: 300;
+          color: @white-color;
+          font-style: normal;
+        }
+        span {
+          font-family: @lgx-base-font;
+          .font-size(26);
+          font-weight: 300;
+          color: @white-color;
+        }
+      }
+    }
+    .single-bottom {
+      ul {
+        margin-top: 2.6rem;
+        margin-bottom: 5rem;
+        li {
+          .font-size(16);
+          font-weight: 300;
+          margin-bottom: .4rem;
+        }
+      }
+    }
+    &:nth-child(1) {
+      background: @body-bg-deep;
+      border-radius: 12px 0 0 12px;
+      .single-top {
+        .title {
+          color: @brand-color;
+          a {
+            color: inherit;
+          }
+        }
+        .price {
+          color: @brand-color3;
+          i {
+            color: @black-color;
+            opacity: .4;
+          }
+          span {
+            color: @black-color;
+            opacity: .7;
+          }
+        }
+      }
+      .single-bottom {
+        ul {
+          li {
+            color: @black-color;
+          }
+        }
+      }
+    }
+    &:last-child {
+      border-radius: 0 12px 12px 0;
+    }
+    &:hover {
+      .bg-rgba(@white-color, 1);
+      .lgx-single-registration-inner {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        animation-duration: 600ms;
+        animation-timing-function: linear;
+      }
+      .single-top {
+        .title {
+          color: @brand-color;
+          a {
+            color: inherit;
+          }
+        }
+        .price {
+          color: @brand-color3;
+          i {
+            color: @black-color;
+            opacity: .4;
+          }
+          span {
+            color: @black-color;
+            opacity: .7;
+          }
+        }
+      }
+      .single-bottom {
+        ul {
+          li {
+            color: @black-color;
+          }
+        }
+      }
+    }
+  }
+  .recommended {
+    background: @brand-color3;
+    //color: rgba(50, 51, 51, 0.8);
+    .lgx-btn {
+      background: @brand-color;
+      &:hover {
+        background: @brand-color3;
+      }
+    }
+    .single-top {
+      .title {
+        color: @brand-color;
+      }
+      .price {
+        color: @brand-color;
+      }
+      p {
+        //color: @black-color;
+      }
+    }
+  }
+}
+
+
+
+.lgx-registration-form-box {
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    @white-color;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    @white-color;
+    opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    @white-color;
+    opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    @white-color;
+  }
+  /*::-ms-input-placeholder { !* Microsoft Edge *!
+    color:    @white-color;
+  }*/
+
+  ::placeholder { /* Most modern browsers support this now. */
+    color:    @white-color;
+  }
+}
+
+.lgx-about-registration-box {
+  position: relative;
+  //top: -258px;
+  margin-top: -258px;
+}
+
+
+
+.lgx-registration-form-box {
+  background: url('../img/registrationbox-bg.jpg') center center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  padding: 4.2rem 3rem;
+  text-align: center;
+  .title {
+    .font-size(42);
+    color: @white-color;
+    margin-bottom: 2.6rem;
+    margin-top: 0;
+  }
+  input.wpcf7-form-control,
+  input.form-control{
+    margin-bottom: 1.5rem;
+    display: block;
+    width: 100%;
+    height: 60px;
+    .bg-rgba(@white-color, .2);
+    color: @white-color;
+    &:focus {
+      .bg-rgba(@white-color, .7);
+      color: @brand-color;
+      outline: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+  }
+  select.wpcf7-select,
+  select.lgx-select {
+    .bg-rgba(@white-color, .2);
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 15px 20px;
+    margin-bottom: 2rem;
+    color: @white-color;
+    outline: none;
+    option {
+      background: @brand-color;
+    }
+  }
+  .wpcf7-form-control.wpcf7-submit,
+  .wpcf7-form-control.lgx-submit,
+  .wpcf7-submit,
+  .lgx-submit {
+    display: block;
+    width: 100%;
+    background: @brand-color3;
+    margin-top: 2rem;
+    color: @brand-color;
+    &:hover {
+      background: @brand-color2;
+      color: @white-color;
+    }
+  }
+}
+
+
+.lgx-registration-simple {
+  background: url('http://placehold.it/1920x800') bottom center no-repeat fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .lgx-inner {
+    .bg-rgba(@brand-color, 0.9);
+  }
+}
+
+.lgx-registration-simple {
+  text-align: center;
+  .lgx-heading {
+    margin-bottom: 4.2rem;
+    .subheading {
+      opacity: .7;
+    }
+  }
+}

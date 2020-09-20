@@ -1,0 +1,296 @@
+#lgx-parallax-banner {
+  display: block;
+
+  .lgx-section {
+    display: block;
+    overflow: hidden;
+    .lgx-item-parallax-banner {
+      height: 85rem;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      .banner-content {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        .lgx-hover-link {
+          display: table;
+          height: 100%;
+          width: 100%;
+          .lgx-vertical {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+      }
+      // Bottom Wave
+      .bottomlayer1 {
+        position: absolute;
+        bottom: -60px;
+        height: 170px;
+        left: -50px;
+        background-size: 100% 170px;
+        right: -50px;
+        animation: wave 3s .1s infinite linear;
+        display: block;
+        overflow: hidden;
+      }
+      .bottomlayer2 {
+        position: absolute;
+        bottom: -60px;
+        height: 170px;
+        left: -50px;
+        background-size: 100% 170px;
+        right: -50px;
+        animation: wave 5s .2s infinite linear;
+        display: block;
+        overflow: hidden;
+      } // Bottom Wave End
+
+      .bglayer1 {
+        position: absolute;
+        top: -15%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-size: cover;
+      }
+      .bglayer2 {
+        position: absolute;
+        bottom: -15%;
+        right: 0;
+        left: -10%;
+      }
+
+      .rightlayer1 {
+        position: absolute;
+        bottom: 0;
+        background-size: 80%;
+        right: -8%;
+        top: -10px;
+      }
+
+      .lgx-layer3 {
+        position: absolute;
+        right: -10%;
+        bottom: -30%;
+      }
+      .lgx-layer4 {
+        position: absolute;
+        right: -10%;
+        top: -10px;
+      }
+      .lgx-layer5 {
+        position: absolute;
+        left: 0;
+        top: -15%;
+      }
+      .lgx-layer6 {
+        position: absolute;
+        left: 30%;
+        top: 8%;
+      }
+      .lgx-layer7 {
+        position: absolute;
+        left: 30%;
+        top: 8%;
+      }
+    }
+  }
+}
+
+#lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer2 {
+  position: absolute;
+  bottom: -5%;
+  right: -15%;
+}
+#lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer2shade {
+  position: absolute;
+  bottom: 0;
+  right: 27%;
+  top: 8%;
+  -moz-opacity: .4;
+  -khtml-opacity: .4;
+  -webkit-opacity: .4;
+  filter: alpha(opacity=40)
+}
+#lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer3 {
+  position: absolute;
+  bottom: 0;
+  right: 45px;
+  height: 374px;
+  width: 632px;
+  top: 290px;
+  background-size: 80%
+}
+#lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer3shade {
+  position: absolute;
+  bottom: 0;
+  background-size: 80%;
+  right: 16px;
+  height: 263px;
+  width: 683px;
+  top: 395px;
+  -moz-opacity: .4;
+  -khtml-opacity: .4;
+  -webkit-opacity: .4;
+  opacity: .4;
+  filter: alpha(opacity=40)
+}
+
+#lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .leftlayer1 {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  left: 20%
+}
+@media only screen and (max-width: 1400px) {
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .leftlayer1 {
+    top: 25%;
+    right: 0;
+    left: 5%;
+    width: 40%
+  }
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer1 {
+    top: -22%;
+  }
+
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer3 {
+    right: -4%;
+    top: 40%
+  }
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer3shade {
+    right: -6%;
+    top: 57%
+  }
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer2shade {
+    right: 21%;
+    top: 8%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .leftlayer1 {
+    left: 2%;
+    width: 40%
+  }
+
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer2shade {
+    display: none;
+  }
+
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer3 {
+    right: -5%;
+    top: 35%
+  }
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer3shade {
+    right: -8%;
+    top: 52%
+  }
+}
+@media only screen and (max-width: 991px) {
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner {
+    height: 54rem;
+    padding-bottom: 80px;
+    padding-top: 0;
+  }
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .bglayer1,
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .bglayer2,
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer1,
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer2,
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer2shade,
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer3,
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .rightlayer3shade {
+    position: static;
+    display: none
+  }
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .leftlayer1 {
+    background-image: url(../img/parallax/pl_mb1.png);
+    background-repeat: no-repeat;
+    position: static;
+    top: auto;
+    right: auto;
+    left: auto;
+    text-align: center;
+    padding: 150px 15%;
+    background-size: 200px;
+    background-position: -100px 100%;
+    width: 100%;
+    margin: 0 auto
+  }
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .leftlayer1 .banner-content a.paramore {
+    margin-top: 50px;
+    display: inline-block
+  }
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .leftlayer1 .banner-content h2 {
+    font-size: 4rem;
+    line-height: 6rem;
+    line-height: 40px;
+    padding-bottom: 20px
+  }
+}
+@media screen and (max-width: 768px) {
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner {
+    height: 37rem;
+  }
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .leftlayer1 .banner-content h2 {
+    font-size: 3.5rem;
+    line-height: 5.25rem;
+    line-height: 35px
+  }
+  #lgx-parallax-banner .lgx-section .lgx-item-parallax-banner .leftlayer1 .banner-content p {
+    font-size: 1.8rem;
+    line-height: 2.7rem
+  }
+}
+
+
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0);
+    -moz-transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0);
+    transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0)
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg)
+  }
+}
+@-moz-keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0);
+    -moz-transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0);
+    transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0)
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg)
+  }
+}
+@-ms-keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0);
+    -moz-transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0);
+    transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0)
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg)
+  }
+}
+@keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0);
+    -moz-transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0);
+    transform: rotateZ(0) translate3d(0, 10%, 0) rotateZ(0)
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0, 10%, 0) rotateZ(-360deg)
+  }
+}
