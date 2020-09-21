@@ -1,15 +1,21 @@
-- level: bronze
-    - sponsor: AESA
-      image:
-    - sponsor: Memory Express
-      image:
-- level: silver
-    - sponsor: AESA Silver
-      image:
-    - sponsor: Memory Express Silver
-      image:
-- level: silver
-    - sponsor: AESA Gold
-      image:
-    - sponsor: Memory Express Gold
-      image:
+level: 
+  - name: bronze
+    sponsors: 
+      - name: AESA
+        image:
+      - name: Memory Express
+        image:
+level:
+  - name: silver
+    sponsors:
+      - name: AESA silver
+        image:
+      - name: MEMEX silver
+        image:
+level:
+  - name: gold
+    sponsors:
+      - name: AESA gold
+        image:
+      - name: MEMEX gold
+        image:
