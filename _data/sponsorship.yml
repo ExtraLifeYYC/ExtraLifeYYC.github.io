@@ -1,0 +1,25 @@
+level:
+  - name: gold
+    sponsors: 
+      - name: AESA
+        image: /assets/img/sponsors/aesa.png
+        website:
+      - name: Memory Express
+        image:
+        website:
+  - name: silver
+    sponsors:
+      - name: AESA silver
+        image:
+        website:
+      - name: MEMEX silver
+        image:
+        website:
+  - name: platinum
+    sponsors:
+      - name: AESA silver
+        image:
+        website:
+      - name: MEMEX silver
+        image:
+        website:
