@@ -13,124 +13,67 @@
                 </div>
                 <!--//.ROW-->
                 <div class="row">
+                    {% for item in site.data.speakers %}
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="lgx-single-speaker">
                             <figure>
-                                <a class="profile-img" href=""><img src="http://placehold.it/800x860" alt="Speaker"/></a>
+                                <a class="profile-img" href="">{% if item.image %}<img src="{{ item.image }}" alt="Speaker"/>{% else %}<img src="http://placehold.it/800x860" alt="Speaker"/>{% endif %}</a>
                                 <figcaption>
                                     <div class="social-group">
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitch"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
+                                        {% if item.twitch %}<a class="sp-tw" href="{{ item.twitch }}"><i class="fa fa-twitch"></i></a>{% endif %}
+                                        {% if item.facebook %}<a class="sp-fb" href="{{ item.facebook }}"><i class="fa fa-facebook"></i></a>{% endif %}
+                                        {% if item.instagram %}<a class="sp-insta" href="{{ item.instagram }}"><i class="fa fa-instagram"></i></a>{% endif %}
+                                        {% if item.twitter %}<a class="sp-in" href="{{ item.twitter }}"><i class="fa fa-twitter"></i></a>{% endif %}
                                     </div>
                                     <div class="speaker-info">
-                                        <h3 class="title">Cody Harbidge</h3>
-                                        <h4 class="subtitle">Extra Life YYC President</h4>
+                                        <h3 class="title">{{ item.name }}</h3>
+                                        <h4 class="subtitle">{{ item.position }}</h4>
                                     </div>
                                 </figcaption>
                             </figure>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker">
-                            <figure>
-                                <a class="profile-img" href=""><img src="http://placehold.it/800x860" alt="Speaker"/></a>
-                                <figcaption>
-                                    <div class="social-group">
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                    <div class="speaker-info">
-                                        <h3 class="title">Todd Willsie</h3>
-                                        <h4 class="subtitle">Extra Life YYC Event Coordinator</h4>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker">
-                            <figure>
-                                <a class="profile-img" href=""><img src="http://placehold.it/800x860" alt="Speaker"/></a>
-                                <figcaption>
-                                    <div class="social-group">
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                    <div class="speaker-info">
-                                        <h3 class="title">Ben Fleming</h3>
-                                        <h4 class="subtitle">Extra Life YYC Social Media Manager</h4>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker">
-                            <figure>
-                                <a class="profile-img" href="speakers.html"><img src="http://placehold.it/800x860" alt="Speaker"/></a>
-                                <figcaption>
-                                    <div class="social-group">
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                    <div class="speaker-info">
-                                        <h3 class="title"><a href="speaker.html">Jonathon Doe</a></h3>
-                                        <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker">
-                            <figure>
-                                <a class="profile-img" href="speakers.html"><img src="http://placehold.it/800x860" alt="Speaker"/></a>
-                                <figcaption>
-                                    <div class="social-group">
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                    <div class="speaker-info">
-                                        <h3 class="title"><a href="speaker.html">Jonathon Doe</a></h3>
-                                        <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-speaker">
-                            <figure>
-                                <a class="profile-img" href="speakers.html"><img src="http://placehold.it/800x860" alt="Speaker"/></a>
-                                <figcaption>
-                                    <div class="social-group">
-                                        <a class="sp-tw" href="#"><i class="fa fa-twitter"></i></a>
-                                        <a class="sp-fb" href="#"><i class="fa fa-facebook"></i></a>
-                                        <a class="sp-insta" href="#"><i class="fa fa-instagram"></i></a>
-                                        <a class="sp-in" href="#"><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                    <div class="speaker-info">
-                                        <h3 class="title"><a href="speaker.html">Jonathon Doe</a></h3>
-                                        <h4 class="subtitle">Ceo of LogicHunt</h4>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
+                    {% endfor %}
+
                 </div>
                 <!--//.ROW-->
                 <div class="section-btn-area">
-                    <a class="lgx-btn lgx-btn-big" href="speakers.html">Apply to Host</a>
+                    <button type="button" class="lgx-btn lgx-btn-big" data-toggle="modal" data-target="#myModal">Apply to Host</button>
+                </div>
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                        <h4 class="modal-title">Apply to become a host</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="https://formspree.io/xyybykqd" method="POST" class="was-validated">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" name="email" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" placeholder="Your Message" name="message" id="message"></textarea>
+                                </div>
+                          
+                            <!-- your other form fields go here -->
+                          
+                            <button type="submit">Send</button>
+                          </form>
+                        </div>
+                
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                
+                    </div>
+                    </div>
                 </div>
             </div>
             <!-- //.CONTAINER -->
