@@ -34,9 +34,9 @@
                                                                 <img src="{% if entry.image %}{{ entry.image }}{% else %}http://placehold.it/800x800{% endif %}" alt="Speaker"/>
                                                             </div>
                                                             <div class="schedule-info">
-                                                                <h4 class="time">{{ entry.start }} - {{entry.end}} </h4>
+                                                                <h4 class="time">{{ entry.start }} {% if entry.end %}- {{entry.end}} {% endif %}</h4>
                                                                 <h3 class="title">{{ entry.name }}</h3>
-                                                                <h4 class="author-info">By <span>{{ entry.host }}</span></h4>
+                                                                <h4 class="author-info">Presented By <span>{{ entry.host }}</span></h4>
                                                             </div>
                                                         </div>
                                                     </a>
@@ -47,7 +47,7 @@
                                                     <p class="text">
                                                         {{ entry.description }}
                                                     </p>
-                                                    <h4 class="location"><strong>Location:</strong>  {{ entry.location }} </h4>
+                                                    {% if entry.location %}<h4 class="location"><strong>Location:</strong>  {{ entry.location }} </h4>{% endif %}
                                                 </div>
                                             </div>
                                         </div>

@@ -1,4 +1,9 @@
 level:
+  - name: platinum
+    sponsors:
+      - name: Sponsor To Be Announced
+        image: /assets/img/sponsors/tba.png
+        website:
   - name: gold
     sponsors: 
       - name: AESA
@@ -8,11 +13,6 @@ level:
         image: /assets/img/sponsors/tba.png
         website:
   - name: silver
-    sponsors:
-      - name: Sponsor To Be Announced
-        image: /assets/img/sponsors/tba.png
-        website:
-  - name: platinum
     sponsors:
       - name: Sponsor To Be Announced
         image: /assets/img/sponsors/tba.png

@@ -6,12 +6,35 @@ day:
         start: 2:00pm
         end: 2:30pm
         image: /assets/img/event/opening.jpg
-        host: Cody & Todd of Extra Life YYC
+        host: Extra Life YYC Guild
         description: We begin the day with a quick opening cermony where you are introduced to all of the hosts for the next 24 hours. Learn more about the Alberta Children's Hospital Foundation and what your donations do to help kids in need.
         location: twitch.tv/extralifeyyc
+      - name: Super Smash Bros Ultimate Tournament
+        start: Details Coming Soon
+        host: Alberta Esports Association
+        image: /assets/img/event/smash.jpg
+        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        location: 
+      - name: Valorant Tournament
+        start: Details Coming Soon
+        host: Extra Life YYC
+        image: /assets/img/event/valorant.jpg
+        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        location: 
+      - name: Minecraft Build-Off Competition
+        start: Details Coming Soon
+        host: Extra Life YYC
+        image: /assets/img/event/minecraft.jpg
+        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        location: 
+      - name: Halo Tournament
+        start: Details Coming Soon
+        host: Extra Life YYC
+        image: /assets/img/event/halo.jpg
+        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        location: 
       - name: More Details Coming Soon
-        start: 2:30pm
-        end: 11:59pm
+        start: Nov 7
         image: /assets/img/event/comingsoon.jpg
         host: Extra Life YYC
         description: We're working to get the schedule finalized. Please check back for an update to the schedule, or signup to our newsletter to get more details.
