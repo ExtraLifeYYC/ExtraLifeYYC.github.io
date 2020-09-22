@@ -5,28 +5,25 @@ day:
       - name: Opening Ceremony
         start: 2:00pm
         end: 2:30pm
+        image: /assets/img/event/opening.jpg
         host: Cody & Todd of Extra Life YYC
         description: We begin the day with a quick opening cermony where you are introduced to all of the hosts for the next 24 hours. Learn more about the Alberta Children's Hospital Foundation and what your donations do to help kids in need.
         location: twitch.tv/extralifeyyc
-      - name: Smash Ultimate
+      - name: More Details Coming Soon
         start: 2:30pm
-        end: 5:00pm
-        host: Alberta Esports Association (AESA)
-        description: We begin the day with a quick opening cermony where you are introduced to all of the hosts for the next 24 hours. Learn more about the Alberta Children's Hospital Foundation and what your donations do to help kids in need.
+        end: 11:59pm
+        image: /assets/img/event/comingsoon.jpg
+        host: Extra Life YYC
+        description: We're working to get the schedule finalized. Please check back for an update to the schedule, or signup to our newsletter to get more details.
         location: twitch.tv/extralifeyyc
   - date: Nov 8, 2020
     id: menu1
     events:
-      - name: Opening Ceremony Day 2
-        start: 2:00pm
-        end: 2:30pm
+      - name: Closing Ceremony
+        start: 1:30pm
+        end: 2:00pm
+        image: /assets/img/event/closing.jpg
         host: Cody & Todd of Extra Life YYC
-        description: We begin the day with a quick opening cermony where you are introduced to all of the hosts for the next 24 hours. Learn more about the Alberta Children's Hospital Foundation and what your donations do to help kids in need.
-        location: twitch.tv/extralifeyyc
-      - name: Smash Ultimate
-        start: 2:30pm
-        end: 5:00pm
-        host: Alberta Esports Association (AESA)
-        description: We begin the day with a quick opening cermony where you are introduced to all of the hosts for the next 24 hours. Learn more about the Alberta Children's Hospital Foundation and what your donations do to help kids in need.
+        description: We end our 24 hour stream and give everyone our heart fealt thanks!
         location: twitch.tv/extralifeyyc
 

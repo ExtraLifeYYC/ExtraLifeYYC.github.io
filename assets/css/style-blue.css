@@ -6820,7 +6820,7 @@ button:hover:after,
   font-family: 'Poppins', sans-serif;
   font-size: 68px;
   line-height: 102px;
-  font-size: 6.8rem;
+  font-size: 6.0rem;
   line-height: 10.2rem;
   font-weight: 300;
   color: #efa506;
@@ -7028,7 +7028,7 @@ button:hover:after,
   font-family: 'Poppins', sans-serif;
   font-size: 68px;
   line-height: 102px;
-  font-size: 6.8rem;
+  font-size: 6.0rem;
   line-height: 10.2rem;
   font-weight: 300;
   color: #ffffff;
@@ -11704,7 +11704,7 @@ blockquote.lgx-testi-single:before {
 /* 2.20 FOOTER
 ---------------------------------------------------------------------*/
 .lgx-footer {
-  background: url('http://placehold.it/1920x850') bottom center no-repeat;
+  background: url('../img/footer-bg.jpg') bottom center no-repeat;
   -webkit-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;

@@ -1,6 +1,6 @@
 - name: Cody Harbidge
   image: /assets/img/cody.png
-  twitch:
+  twitch: https://www.twitch.tv/hglights
   instagram:
   facebook:
   twitter:
@@ -12,10 +12,10 @@
   facebook: 
   twitter:
   position: Extra Life YYC Event Coordinator
-- name: Ben Fleming
-  image:
-  twitch: twitch.tv/electricallinenoise
+- name: More To Be Announced
+  image: /assets/img/unknownhost.jpg
+  twitch: 
   instagram:
   facebook: 
   twitter:
-  position: Extra Life YYC Social Media
+  position: 

@@ -3,23 +3,17 @@ level:
     sponsors: 
       - name: AESA
         image: /assets/img/sponsors/aesa.png
-        website:
-      - name: Memory Express
-        image:
+        website: https://esportsalberta.ca/
+      - name: Sponsor To Be Announced
+        image: /assets/img/sponsors/tba.png
         website:
   - name: silver
     sponsors:
-      - name: AESA silver
-        image:
-        website:
-      - name: MEMEX silver
-        image:
+      - name: Sponsor To Be Announced
+        image: /assets/img/sponsors/tba.png
         website:
   - name: platinum
     sponsors:
-      - name: AESA silver
-        image:
-        website:
-      - name: MEMEX silver
-        image:
+      - name: Sponsor To Be Announced
+        image: /assets/img/sponsors/tba.png
         website:

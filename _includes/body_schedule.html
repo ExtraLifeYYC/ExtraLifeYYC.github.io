@@ -31,7 +31,7 @@
                                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ forloop.parentloop.index }}{{ forloop.index }}" aria-expanded="true" aria-controls="collapseOne">
                                                         <div class="lgx-single-schedule">
                                                             <div class="author">
-                                                                <img src="http://placehold.it/800x800" alt="Speaker"/>
+                                                                <img src="{% if entry.image %}{{ entry.image }}{% else %}http://placehold.it/800x800{% endif %}" alt="Speaker"/>
                                                             </div>
                                                             <div class="schedule-info">
                                                                 <h4 class="time">{{ entry.start }} - {{entry.end}} </h4>
