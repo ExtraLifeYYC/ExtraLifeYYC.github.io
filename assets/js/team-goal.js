@@ -18,11 +18,12 @@
 		const $goal = $('#elGoal');
 		const $header = $('#extralifegoal');
 		$calcratio = ((result.sumDonations / result.fundraisingGoal) * 100).toFixed(0);
-		$raised.html(ELT.toCurrency(result.sumDonations));
-		$goal.html(ELT.toCurrency(result.fundraisingGoal));
+		$raised.html(ELT.toCurrency(result.sumDonations * 1.33874));
+		$goal.html(ELT.toCurrency(result.fundraisingGoal * 1.33874));
 		
 		$header.attr("data-value", $calcratio)
 	}
 
 	start();
 })(window.jQuery, window.ELT);
+
