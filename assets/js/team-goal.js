@@ -21,7 +21,11 @@
 		$raised.html(ELT.toCurrency(result.sumDonations * 1.33874));
 		$goal.html(ELT.toCurrency(result.fundraisingGoal * 1.33874));
 		
-		$header.attr("data-value", $calcratio)
+		
+		var bar = new ldBar(".mybar", {
+			"preset": "energy",
+			"value": $calcratio
+		});
 	}
 
 	start();
