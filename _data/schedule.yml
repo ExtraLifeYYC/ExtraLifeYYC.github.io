@@ -16,14 +16,14 @@ day:
         image: /assets/img/event/smash.jpg
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
         location: twitch.tv/extralifeyyc
-      - name: Splatoon Tournament
+      - name: Splatoon 2 Tournament
         start: 2:00pm
         end: 6:00PM MDT
         host: Alberta Esports Association
         image: /assets/img/event/splatoon.jpg
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
         location: 
-      - name: Pokemon VGC
+      - name: Pokemon Sword & Shield
         start: 3:30pm
         end: 8:30PM MDT
         host: Alberta Esports Association
@@ -31,7 +31,8 @@ day:
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
         location:  
       - name: Minecraft Build-Off Competition
-        start: Details Coming Soon
+        start: 2:00pm
+        end: Nov 8. 
         host: Extra Life YYC
         image: /assets/img/event/minecraft.jpg
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
@@ -51,12 +52,19 @@ day:
   - date: Nov 8, 2020
     id: menu1
     events:
+      - name: Rivals of Aether
+        start: 12:00am
+        end: 3:30am MDT
+        image: /assets/img/event/rivals.jpg
+        host: Alberta Esports Association
+        description: A platform fighter on Steam and Switch set in a world where civilizations wage war by summoning the power of Fire, Water, Air, and Earth.
+        location: https://smash.gg/tournament/aesa-extra-life-game-day-2020/register
       - name: Valorant Spike Rush Tournament
         start: Details Coming Soon
         host: Extra Life YYC
         image: /assets/img/event/valorant.jpg
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
-        location:
+        location: 
       - name: Closing Ceremony
         start: 1:30pm
         end: 2:00pm
