@@ -4,23 +4,32 @@ day:
     events:
       - name: Opening Ceremony
         start: 2:00pm
-        end: 2:30pm
+        end: 2:30pm MDT
         image: /assets/img/event/opening.jpg
         host: Extra Life YYC Guild
         description: We begin the day with a quick opening cermony where you are introduced to all of the hosts for the next 24 hours. Learn more about the Alberta Children's Hospital Foundation and what your donations do to help kids in need.
         location: twitch.tv/extralifeyyc
       - name: Super Smash Bros Ultimate Tournament
-        start: Details Coming Soon
+        start: 2:00pm
+        end: 10:30PM MDT
         host: Alberta Esports Association
         image: /assets/img/event/smash.jpg
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
-        location: 
-      - name: Valorant Tournament
-        start: Details Coming Soon
-        host: Extra Life YYC
-        image: /assets/img/event/valorant.jpg
+        location: twitch.tv/extralifeyyc
+      - name: Splatoon Tournament
+        start: 2:00pm
+        end: 6:00PM MDT
+        host: Alberta Esports Association
+        image: /assets/img/event/splatoon.jpg
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
         location: 
+      - name: Pokemon VGC
+        start: 3:30pm
+        end: 8:30PM MDT
+        host: Alberta Esports Association
+        image: /assets/img/event/pokemon.jpg
+        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        location:  
       - name: Minecraft Build-Off Competition
         start: Details Coming Soon
         host: Extra Life YYC
@@ -42,6 +51,12 @@ day:
   - date: Nov 8, 2020
     id: menu1
     events:
+      - name: Valorant Spike Rush Tournament
+        start: Details Coming Soon
+        host: Extra Life YYC
+        image: /assets/img/event/valorant.jpg
+        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        location:
       - name: Closing Ceremony
         start: 1:30pm
         end: 2:00pm
