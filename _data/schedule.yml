@@ -39,14 +39,14 @@ day:
         location: 
       - name: Halo Tournament
         start: 4:30pm
-        end: 10:30pm
+        end: 10:30pm MDT
         host: Extra Life YYC
         image: /assets/img/event/halo.jpg
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
         location: 
       - name: Fall Guys
         start: 8:30pm
-        end: 10:30pm
+        end: 10:30pm MDT
         image: /assets/img/event/fallguys.jpg
         host: Extra Life YYC
         description: We're working to get the schedule finalized. Please check back for an update to the schedule, or signup to our newsletter to get more details.
@@ -62,7 +62,8 @@ day:
         description: A platform fighter on Steam and Switch set in a world where civilizations wage war by summoning the power of Fire, Water, Air, and Earth.
         location: https://smash.gg/tournament/aesa-extra-life-game-day-2020/register
       - name: Valorant Spike Rush Tournament
-        start: Details Coming Soon
+        start: 8:30am
+        end: 1:30pm MDT
         host: Extra Life YYC
         image: /assets/img/event/valorant.jpg
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
@@ -76,7 +77,7 @@ day:
         location: 
       - name: Closing Ceremony
         start: 1:30pm
-        end: 2:00pm
+        end: 2:00pm MDT
         image: /assets/img/event/closing.jpg
         host: Cody & Todd of Extra Life YYC
         description: We end our 24 hour stream and give everyone our heart fealt thanks!
