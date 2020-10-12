@@ -14,14 +14,14 @@ day:
         end: 10:30PM MDT
         host: Alberta Esports Association
         image: /assets/img/event/smash.jpg
-        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        description: Compete in Alberta's only Super Smash Bros Ultimate Tournament on Game Day with AESA and Extra Life YYC. The event will be streamed on the official ExtraLifeYYC twitch channel.
         location: twitch.tv/extralifeyyc
       - name: Splatoon 2 Tournament
         start: 2:00pm
         end: 6:00PM MDT
         host: Alberta Esports Association
         image: /assets/img/event/splatoon.jpg
-        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        description: AESA is hosting a Splatoon 2 tournament on the Extra Life YYC discord. Register your whole team today and compete in brackets.
         location: 
       - name: Pokemon Sword & Shield
         start: 3:30pm
@@ -35,7 +35,7 @@ day:
         end: Nov 8 12:00pm MDT
         host: Extra Life YYC
         image: /assets/img/event/minecraft.jpg
-        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        description: Have you got the buildings skills in minecraft? This build off will be running for 10 hours! overnight. You have practically the whole day and night to build something amazing! Contestants will be judged by our panel. Winner will be announced on the afternoon of Nov 8.
         location: 
       - name: Halo Tournament
         start: 4:30pm
@@ -66,14 +66,14 @@ day:
         end: 1:30pm MDT
         host: Extra Life YYC
         image: /assets/img/event/valorant.jpg
-        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        description: Get you and 4 of your friends together in our Action packed, high-speed Valorant Spike Rush tournament. This tournament will be streamed to the official Extra Life YYC twitch channel with a 2 minute delay.
         location: 
       - name: Minecraft Build-Off Competition
         start: Nov 7 2:00pm
         end: Nov 8 12:00pm MDT
         host: Extra Life YYC
         image: /assets/img/event/minecraft.jpg
-        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        description: Have you got the buildings skills in minecraft? This build off will be running for 10 hours! overnight. You have practically the whole day and night to build something amazing! Contestants will be judged by our panel. Winner will be announced on the afternoon of Nov 8.
         location: 
       - name: Closing Ceremony
         start: 1:30pm
