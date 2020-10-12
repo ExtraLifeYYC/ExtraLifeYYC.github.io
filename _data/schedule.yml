@@ -32,7 +32,7 @@ day:
         location:  
       - name: Minecraft Build-Off Competition
         start: 2:00pm
-        end: Nov 8. 
+        end: Nov 8 12:00pm MDT
         host: Extra Life YYC
         image: /assets/img/event/minecraft.jpg
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
@@ -63,6 +63,13 @@ day:
         start: Details Coming Soon
         host: Extra Life YYC
         image: /assets/img/event/valorant.jpg
+        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        location: 
+      - name: Minecraft Build-Off Competition
+        start: Nov 7 2:00pm
+        end: 12:00pm MDT
+        host: Extra Life YYC
+        image: /assets/img/event/minecraft.jpg
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
         location: 
       - name: Closing Ceremony
