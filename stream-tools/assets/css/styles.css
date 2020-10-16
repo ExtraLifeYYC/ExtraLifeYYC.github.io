@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Furore';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Furore'), url('Furore.woff') format('woff');
+    }
+
+html{
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    overflow: hidden;
+}
+
+h1{
+    font-family: Furore;
+    font-size: 54px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size:24px;
+    margin-top:5px;
+    color: #fff;
+}
+
+#cameraOne{
+    position: absolute;
+    top:818px;
+    left:1552px;
+    width:325px;
+    height: 222px;
+    background-color: #00ff00;
+    border-radius: 5px;
+    border: #00C1BE 5px solid;
+    margin:0px;
+    z-index:100;
+}
+#gameOne{
+    position: absolute;
+    width: 1538px;
+    height: 860px;
+    top: 70px;
+    left: 184px;
+    background-color: #00ff00;
+    border-radius: 5px;
+    border: #00C1BE 5px solid;
+    box-shadow: rgba(0,0,0,0.15) 0px 5px 25px;
+}
+
+#rockies{
+    position: absolute;
+    top: 870px;
+    left: 16px;
+}
+
+#extralife{
+    position: absolute;
+    left:850px;
+    top:-5px;
+}
+
+.ldBar.label-center > .ldBar-label {
+    display: none !important;
+}
+
+#donationBar{
+    position: absolute;
+    left: 174px;
+    top:-5px
+}
+
+#latestDonation{
+    position: absolute;
+    float: right;
+    right:190px;
+    top:20px;
+}
+
+#latestDonation p{
+    font-size: 18px;
+}
+
+#totals{
+    position: absolute;
+    top:21px;
+    left: 200px;
+}
+#totals p{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#messageOne{
+    position: absolute;
+    top:950px;
+    left: 184px;
+}
+
+#messageTwo{
+    position: absolute;
+    top:950px;
+    left: 184px;
+}
+
+#messageThree{
+    position: absolute;
+    top:950px;
+    left: 184px;
+}
+
+.background {
+    width: 1920px;
+    height: 1080px;
+    background: linear-gradient(218deg, #196e98, #019b80);
+    background-size: 400% 400%;
+
+    animation: rockiesBG 31s ease infinite;
+}
+
+@keyframes rockiesBG {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}

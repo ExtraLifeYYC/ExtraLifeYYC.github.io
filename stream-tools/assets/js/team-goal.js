@@ -5,7 +5,8 @@
 
 	/* Initial setup of the layout and theme based on user settings */
 	function start() {
-		update();
+        update();
+        setInterval(update, ELT.settings.refreshTimeMS);
 	}
 
 	/* Main loop */
@@ -30,4 +31,3 @@
 
 	start();
 })(window.jQuery, window.ELT);
-
