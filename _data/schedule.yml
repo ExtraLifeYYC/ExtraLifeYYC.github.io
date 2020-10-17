@@ -23,13 +23,6 @@ day:
         image: /assets/img/event/splatoon.jpg
         description: AESA is hosting a Splatoon 2 tournament on the Extra Life YYC discord. Register your whole team today and compete in brackets.
         location: 
-      - name: Pokemon Sword & Shield
-        start: 3:30pm
-        end: 8:30PM MDT
-        host: Alberta Esports Association
-        image: /assets/img/event/pokemon.jpg
-        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
-        location:  
       - name: Minecraft Build-Off Competition
         start: Nov 7 2:00pm
         end: Nov 8 12:00pm MDT
@@ -61,6 +54,13 @@ day:
         host: Alberta Esports Association
         description: A platform fighter on Steam and Switch set in a world where civilizations wage war by summoning the power of Fire, Water, Air, and Earth.
         location: https://smash.gg/tournament/aesa-extra-life-game-day-2020/register
+      - name: Pokemon Sword & Shield
+        start: 3:30pm
+        end: 8:30PM MDT
+        host: Alberta Esports Association
+        image: /assets/img/event/pokemon.jpg
+        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
+        location:  
       - name: Valorant Spike Rush Tournament
         start: 8:30am
         end: 1:30pm MDT
