@@ -75,6 +75,12 @@ gsap.from("#extralife", {opacity: 0, y: -50, duration: 0.75, delay: 0.95});
 //get the URL parameter 'streamer'
 
 const streamer = getUrlParameter('streamer');
+layout = getUrlParameter('layout');
+
+if(layout == "nocam"){
+    gsap.to("#cameraOne", {opacity:0});
+}
+
 if(streamer != ""){
     $("#streamer").text(streamer);
     $("#streamerURL").text(streamer);
