@@ -1,19 +1,14 @@
 level:
-  - name: platinum
-    sponsors:
-      - name: Sponsor To Be Announced
-        image: /assets/img/sponsors/tba.png
-        website:
   - name: gold
     sponsors: 
       - name: AESA
         image: /assets/img/sponsors/aesa.png
         website: https://esportsalberta.ca/
-      - name: Sponsor To Be Announced
-        image: /assets/img/sponsors/tba.png
-        website:
   - name: silver
     sponsors:
-      - name: Sponsor To Be Announced
+      - name: Era Gaming
+        image: /assets/img/sponsors/tba.png
+        website:
+      - name: Willsie Digital
         image: /assets/img/sponsors/tba.png
         website:
