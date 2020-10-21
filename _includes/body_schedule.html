@@ -7,7 +7,7 @@
                     <div class="col-xs-12">
                         <div class="lgx-heading lgx-heading-white">
                             <h2 class="heading">Event Schedule</h2>
-                            <h3 class="subheading">Check out what's going to be happening on game day!</h3>
+                            <h3 class="subheading">Check out what's going to be happening on game day! Click any of the events below to get details on the events and how to watch or register to compete</h3>
                         </div>
                     </div>
                 </div>
@@ -37,6 +37,7 @@
                                                                 <h4 class="time">{{ entry.start }} {% if entry.end %}- {{entry.end}} {% endif %}</h4>
                                                                 <h3 class="title">{{ entry.name }}</h3>
                                                                 <h4 class="author-info">Presented By <span>{{ entry.host }}</span></h4>
+                                                                <p class="clickdetails">click for more details</p>
                                                             </div>
                                                         </div>
                                                     </a>
@@ -47,7 +48,8 @@
                                                     <p class="text">
                                                         {{ entry.description }}
                                                     </p>
-                                                    {% if entry.location %}<h4 class="location"><strong>Location:</strong>  {{ entry.location }} </h4>{% endif %}
+                                                    {% if entry.location %}<h4 class="location"><strong>Where to watch:</strong>  <a href="https://{{ entry.location }}" target="_blank">{{ entry.location }}</a> </h4>{% endif %}
+                                                    {% if entry.registration %}<a class="lgx-btn" href="{{ entry.registration }}" target="_blank">Register To Compete on Smash.gg</a>{% endif %}
                                                 </div>
                                             </div>
                                         </div>

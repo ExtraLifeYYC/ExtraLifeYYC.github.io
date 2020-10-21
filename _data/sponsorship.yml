@@ -4,11 +4,17 @@ level:
       - name: AESA
         image: /assets/img/sponsors/aesa.png
         website: https://esportsalberta.ca/
+      - name: Microsoft
+        image: /assets/img/sponsors/microsoft.png
+        website: https://microsoft.ca/
   - name: silver
     sponsors:
       - name: Era Gaming
-        image: /assets/img/sponsors/tba.png
+        image: /assets/img/sponsors/era.png
         website:
       - name: Willsie Digital
+        image: /assets/img/sponsors/willsie.png
+        website:
+      - name: 
         image: /assets/img/sponsors/tba.png
         website:

@@ -11,7 +11,7 @@ day:
         location: twitch.tv/extralifeyyc
       - name: Super Smash Bros Ultimate Tournament
         start: 2:00pm
-        end: 10:30PM MDT
+        end: 10:30pm MDT
         closes: Nov 5, 2020 11:59PM MST
         host: Alberta Esports Association
         image: /assets/img/event/smash.jpg
@@ -20,7 +20,7 @@ day:
         registration: https://smash.gg/tournament/aesa-extra-life-game-day-2020/event/super-smash-bros-ultimate-1v1/overview
       - name: Splatoon 2 Tournament
         start: 2:00pm
-        end: 6:00PM MDT
+        end: 6:00pm MDT
         closes: Nov 5, 2020 11:59PM MST
         host: Alberta Esports Association
         image: /assets/img/event/splatoon.jpg
@@ -28,13 +28,13 @@ day:
         location: 
         registration: https://smash.gg/tournament/aesa-extra-life-game-day-2020/event/splatoon-2/overview
       - name: Minecraft Build-Off Competition
-        start: Nov 7 2:00pm
-        end: Nov 8 12:00pm MDT
+        start: 8:00pm
+        end: 10:30pm MDT
         closes: Nov 5, 2020 11:59PM MST
         host: Extra Life YYC
         image: /assets/img/event/minecraft.jpg
-        description: Have you got the buildings skills in minecraft? This build off will be running for 10 hours! overnight. You have practically the whole day and night to build something amazing! Contestants will be judged by our panel. Winner will be announced on the afternoon of Nov 8.
-        location: 
+        description: Have you got the buildings skills in minecraft? Can you build something amazing in only 3 hours? Contestants will be judged by our panel of minecraft gaming experts! Winners will be announced on the evening on Nov 7 at 11pm.
+        location: twitch.tv/extralifeyyc
         registration: https://smash.gg/tournament/extra-life-rockies/event/extra-life-rockies-minecraft-build-off/overview
       - name: Halo 5 2v2 Tournament
         start: 4:30pm
@@ -42,19 +42,35 @@ day:
         closes: Nov 5, 2020 11:59PM MST
         host: Extra Life YYC
         image: /assets/img/event/halo.jpg
-        description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
-        location: 
+        description: Join us for our Halo 5 2v2 tournament on Xbox One. Who will do us the honour of being Alberta Children's "Master Chief". Play for the glory, but ultimately play to heal kids!
+        location: twitch.tv/extralifeyyc2
         registration: https://smash.gg/tournament/extra-life-rockies/event/extra-life-rockies-halo-5-2v2/overview
       - name: Fall Guys
         start: 8:30pm
         end: 10:30pm MDT
         image: /assets/img/event/fallguys.jpg
         host: Extra Life YYC
-        description: We're working to get the schedule finalized. Please check back for an update to the schedule, or signup to our newsletter to get more details.
-        location: twitch.tv/extralifeyyc
+        description: Join fellow extra lifers in the southern alberta area as we play fall guys together on the Extra Life YYC Discord server. NO REGISTRATION NECESSARY.
+        location: extralifeyyc.com/discord
+      - name: BCI Game Jam
+        start: Nov 7 9:00AM
+        end: Nov 8 9:00PM MST
+        image: /assets/img/event/bci.jpg
+        host: NME & Alberta Children's Hospital
+        description: |
+          Join a group of amazing software developers as they create a video game in only 48 hours. And not just any kind of video game, 
+          but a video game that is controlled by the power of only your brain. Brain Computing Interface's allow kids with disabilities 
+          an opportunity to experience video games just like their peers and family, helping build their self-esteem, confidence and 
+          connection with their family. <br />
+          &nbsp;<br />
+          This BCI Game Jam is being ran by an amazing group of local developers, using Unity, JavaScript, C# and Node.js. The team will be streaming live
+          answering questions about game development, their brain computing interface controller, and how they work with the Alberta Children's Hospital!<br />
+          &nbsp; <br />
+          Information on how to watch is coming soon!
+        location:
       - name: Video Game Movie Watch Party!
-        start: 4:00PM
-        end: 5:00AM MDT
+        start: 4:00pm
+        end: 5:00am MST
         image: /assets/img/event/watchparty.jpg
         host: Extra Life YYC
         description: |
@@ -77,15 +93,15 @@ day:
     events:
       - name: Rivals of Aether
         start: 12:00am
-        end: 3:30am MDT
+        end: 3:30am MST
         image: /assets/img/event/rivals.jpg
         host: Alberta Esports Association
-        description: A platform fighter on Steam and Switch set in a world where civilizations wage war by summoning the power of Fire, Water, Air, and Earth.
-        location: https://smash.gg/tournament/aesa-extra-life-game-day-2020/register
+        description: A platform fighter on Steam and Switch set in a world where civilizations wage war by summoning the power of Fire, Water, Air, and Earth. Join in on this amazing platform battle royale.
+        location: https://www.twitch.tv/rivalsofalberta
         registration: https://smash.gg/tournament/aesa-extra-life-game-day-2020/event/rivals-of-aether/overview
       - name: Pokemon Sword & Shield
         start: 8:00am
-        end: 1:00PM MDT
+        end: 1:00PM MST
         closes: Nov 5, 2020 11:59PM MST
         host: Alberta Esports Association
         image: /assets/img/event/pokemon.jpg
@@ -94,24 +110,16 @@ day:
         registration: https://smash.gg/tournament/aesa-extra-life-game-day-2020/event/pokemon-sword-and-shield/overview
       - name: Valorant Spike Rush Tournament
         start: 8:30am
-        end: 1:30pm MDT
+        end: 1:30pm MST
         closes: Nov 5, 2020 11:59PM MST
         host: Extra Life YYC
         image: /assets/img/event/valorant.jpg
-        description: Get you and 4 of your friends together in our Action packed, high-speed Valorant Spike Rush tournament. This tournament will be streamed to the official Extra Life YYC twitch channel with a 2 minute delay.
-        location: 
+        description: Get you and your friends together in our Action packed, high-speed Valorant Spike Rush tournament. This tournament will be streamed to the official Extra Life YYC twitch channel with a 2 minute delay.
+        location: twitch.tv/extralifeyyc
         registration: https://smash.gg/tournament/extra-life-rockies/event/extra-life-rockies-valorant-spike-rush-5v5/overview
-      - name: Minecraft Build-Off Competition
-        start: Nov 7 2:00pm
-        end: Nov 8 12:00pm MDT
-        closes: Nov 5, 2020 11:59PM MST
-        host: Extra Life YYC
-        image: /assets/img/event/minecraft.jpg
-        description: Have you got the buildings skills in minecraft? This build off will be running for 10 hours! overnight. You have practically the whole day and night to build something amazing! Contestants will be judged by our panel. Winner will be announced on the afternoon of Nov 8.
-        location: 
       - name: Closing Ceremony
         start: 1:30pm
-        end: 2:00pm MDT
+        end: 2:00pm MST
         image: /assets/img/event/closing.jpg
         host: Cody & Todd of Extra Life YYC
         description: We end our 24 hour stream and give everyone our heart fealt thanks!
