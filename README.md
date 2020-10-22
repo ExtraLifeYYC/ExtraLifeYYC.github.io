@@ -6,7 +6,7 @@ If you're a local web developer or someone that's learning programming, we welco
 
 ## How Can I Help On This Project?
 
-If you know or are learning JS, HTML, CSS, Jekyll you can help by cloning this repo and making changes and improvements to any of the code
+If you know or are learning JS, HTML, CSS, Jekyll you can help directly! This repository is using the fork and pull model of development. If you see a change you want to make just fork this project, make your changes commit them and issue a pull request, an experienced dev will review your request and merge the code in if it's good. If you are an experienced developer and you are added as a collaborator to the project just create a topic branch, make your changes and issue a pull request.
 
 If you're an artist, designer or writer we encourage you to join our [discord](https://discord.gg/hZuk3xq) where we can work with you to get you access to help with design work.
 
