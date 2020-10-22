@@ -25,7 +25,7 @@ day:
         host: Alberta Esports Association
         image: /assets/img/event/splatoon.jpg
         description: AESA is hosting a Splatoon 2 tournament on the Extra Life YYC discord. Register your whole team today and compete in brackets.
-        location: 
+        location: twitch.tv/albertasquidswamp
         registration: https://smash.gg/tournament/aesa-extra-life-game-day-2020/event/splatoon-2/overview
       - name: Minecraft Build-Off Competition
         start: 8:00pm
@@ -58,16 +58,15 @@ day:
         image: /assets/img/event/bci.jpg
         host: NME & Alberta Children's Hospital
         description: |
-          Join a group of amazing software developers as they create a video game in only 48 hours. And not just any kind of video game, 
-          but a video game that is controlled by the power of only your brain. Brain Computing Interface's allow kids with disabilities 
-          an opportunity to experience video games just like their peers and family, helping build their self-esteem, confidence and 
-          connection with their family. <br />
+          Join a group of amazing software developers as they create a video game in only 48 hours - that is controlled 
+          just by the power of your brain. Brain-computer interface's (BCI) allow kids and adults with severe physical disability 
+          the opportunity to play, explore and experience video games often for the first time. This technology enables these players 
+          to build new skills, connect with friends and families, and experience the joy that comes from getting to the next level. <br />
           &nbsp;<br />
-          This BCI Game Jam is being ran by an amazing group of local developers, using Unity, JavaScript, C# and Node.js. The team will be streaming live
-          answering questions about game development, their brain computing interface controller, and how they work with the Alberta Children's Hospital!<br />
+          This BCI game dev stream is being ran by an amazing group of local developers, using Unity, JavaScript, C# and Node.js. The team will be streaming live,
+          answering questions about game development, brain-computer interfaces, how BCIs can function as controllers, and their work with the Alberta Children's Hospital!<br />
           &nbsp; <br />
-          Information on how to watch is coming soon!
-        location:
+        location: twitch.tv/bcigames
       - name: Video Game Movie Watch Party!
         start: 4:00pm
         end: 5:00am MST
@@ -106,7 +105,7 @@ day:
         host: Alberta Esports Association
         image: /assets/img/event/pokemon.jpg
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
-        location:  
+        location: twitch.tv/albertaVGC
         registration: https://smash.gg/tournament/aesa-extra-life-game-day-2020/event/pokemon-sword-and-shield/overview
       - name: Valorant Spike Rush Tournament
         start: 8:30am
