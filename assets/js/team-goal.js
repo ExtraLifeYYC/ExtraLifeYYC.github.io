@@ -1,3 +1,6 @@
+---
+Title: Currency
+---
 (function( $, ELT ){
 	/**********
 	 * Main Functionality
@@ -18,8 +21,8 @@
 		const $goal = $('#elGoal');
 		const $header = $('#extralifegoal');
 		$calcratio = ((result.sumDonations / result.fundraisingGoal) * 100).toFixed(0);
-		$raised.html(ELT.toCurrency(result.sumDonations * 1.31114));
-		$goal.html(ELT.toCurrency(result.fundraisingGoal * 1.31114));
+		$raised.html(ELT.toCurrency(result.sumDonations * {{ site.data.currencyConvert.USD_CAD }} ));
+		$goal.html(ELT.toCurrency(result.fundraisingGoal * {{ site.data.currencyConvert.USD_CAD }} ));
 		
 		
 		var bar = new ldBar(".mybar", {

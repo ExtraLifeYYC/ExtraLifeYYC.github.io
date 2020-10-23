@@ -9,7 +9,7 @@ function getUrlParameter(name) {
 const particlesJSON = {
     "particles": {
         "number": {
-            "value": 20,
+            "value": 15,
             "density": {
                 "enable": true,
                 "value_area": 500
@@ -19,13 +19,13 @@ const particlesJSON = {
             "value": "#00C1BE"
         },
         "shape": {
-            "type": "polygon",
+            "type": "triangle",
             "stroke": {
                 "width": 2,
                 "color": "#00C1BE"
             },
             "polygon": {
-                "nb_sides": 6
+                "nb_sides": 3
             }
         },
         "opacity": {
@@ -33,11 +33,11 @@ const particlesJSON = {
             "random": true
         },
         "size": {
-            "value": 10,
+            "value": 30,
             "random": true
         },
         "line_linked": {
-            "enable": true,
+            "enable": false,
             "distance": 100,
             "color": "#00C1BE",
             "opacity": 0.3,
@@ -45,11 +45,11 @@ const particlesJSON = {
         },
         "move": {
             "enable": true,
-            "speed": 0.5,
-            "direction": "bottom",
+            "speed": 0.3,
+            "direction": "top",
             "random": true,
-            "straight": true,
-            "out_mode": "out",
+            "straight": false,
+            "out_mode": "in",
             "bounce": false,
             "attract": {
                 "enable": false,
@@ -65,10 +65,10 @@ particlesJS("particles-js", particlesJSON)
 
 gsap.from("#cameraOne", {border: 0, x: 210, width: 0, duration: 0.75, delay: 0.75});
 gsap.from("#gameOne", {border: 0, y: 550, height: 0, duration: 0.75, delay: 1});
-gsap.from("#rockies", {opacity: 0, y: 50, duration: 0.75, delay: 0.95});
+gsap.from("#controllerwings", {opacity: 0, y: 50, duration: 0.75, delay: 0.95});
 gsap.from("#donationBar", {opacity: 0, y: -50, duration: 0.75, delay: 0.75});
 gsap.from("#totals", {opacity: 0, y: -50, duration: 0.75, delay: 0.75});
-gsap.from("#extralife", {opacity: 0, y: -50, duration: 0.75, delay: 0.95});
+gsap.from("#extralifeCAD", {opacity: 0, y: -50, duration: 0.75, delay: 0.95});
 
 
 
@@ -76,6 +76,36 @@ gsap.from("#extralife", {opacity: 0, y: -50, duration: 0.75, delay: 0.95});
 
 const streamer = getUrlParameter('streamer');
 layout = getUrlParameter('layout');
+region = getUrlParameter('region');
+teamid = getUrlParameter('teamid');
+
+// This is the region section
+if(region == "calgary"){
+    $('#hospital').text("Alberta Children's Hospital")
+} else if(region == "edmonton") {
+    $('#hospital').text("Stollery Children's Hospital")
+} else if(region == "vancouver") {
+    $('#hospital').text("BC Children's Hospital")
+} else if(region == "saskatchewan") {
+    $('#hospital').text("Jim Pattison Children's Hospital")
+} else if(region == "winnipeg") {
+    $('#hospital').text("Children's Hospital of Winnipeg")
+} else if(region == "london") {
+    $('#hospital').text("Children's Health Foundation")
+} else if(region == "hamilton") {
+    $('#hospital').text("McMaster Children's Hospital")
+} else if(region == "toronto") {
+    $('#hospital').text("SickKids Hospital")
+} else if(region == "ottowa") {
+    $('#hospital').text("Children's Hospital of Eastern Ontario")
+} else if(region == "halifax") {
+    $('#hospital').text("IWK Health Centre Foundation")
+} else if(region == "newfoundlandlabradour") {
+    $('#hospital').text("Janeway Children's Hospital")
+} else {
+    $('#hospital').text("kids")
+}
+
 
 // This changes toggles layout between webcam mode and non webcam mode
 if(layout == "nocam"){

@@ -1,6 +1,12 @@
+teamCode = getUrlParameter("teamid");
+
+if(teamCode == ""){
+	teamCode = 50312
+}
 ELT.settings = {
+	
 	// get donation information for this team
-	teamId: "50312",
+	teamId: teamCode,
 	// if the header message should be shown
 	showHeader: false,
 	// header message to display at the top of the widget
