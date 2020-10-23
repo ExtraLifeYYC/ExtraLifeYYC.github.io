@@ -96,7 +96,7 @@ if(region == "calgary"){
     $('#hospital').text("McMaster Children's Hospital")
 } else if(region == "toronto") {
     $('#hospital').text("SickKids Hospital")
-} else if(region == "ottowa") {
+} else if(region == "ottawa") {
     $('#hospital').text("Children's Hospital of Eastern Ontario")
 } else if(region == "halifax") {
     $('#hospital').text("IWK Health Centre Foundation")

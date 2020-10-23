@@ -22,7 +22,7 @@
 - region: Toronto
   image: /assets/img/guilds/toronto.png
   hospital: SickKids
-- region: Ottowa
+- region: Ottawa
   image: /assets/img/guilds/ottowa.png
   hospital: Children's Hospital of Eastern Ontario
 - region: Quebec
