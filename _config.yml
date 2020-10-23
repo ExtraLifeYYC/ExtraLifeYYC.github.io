@@ -35,6 +35,12 @@ github_username:  ExtraLifeYYC
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-get-json
+
+# Get JSON Currency configuration
+jekyll_get_json:
+  - data: currencyConvert
+    json: 'https://free.currconv.com/api/v7/convert?q=USD_CAD&compact=ultra&apiKey=2853d963088f023dd932'
 
 # Exclude from processing.
 # The following items will not be processed, by default.

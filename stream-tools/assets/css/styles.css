@@ -58,10 +58,22 @@ p{
     left: 16px;
 }
 
+#controllerwings{
+    position: absolute;
+    top: 925px;
+    left: 16px;
+}
+
 #extralife{
     position: absolute;
     left:850px;
     top:-5px;
+}
+
+#extralifeCAD{
+    position: absolute;
+    left:850px;
+    top:3px;
 }
 
 .ldBar.label-center > .ldBar-label {
@@ -126,4 +138,18 @@ p{
     0%{background-position:0% 49%}
     50%{background-position:100% 52%}
     100%{background-position:0% 49%}
+}
+
+.backgroundCAD {
+    width: 1920px;
+    height: 1080px;
+    background: linear-gradient(243deg, #00577f, #1793cc);
+    background-size: 400% 400%;
+    animation: cadBG 31s ease infinite;
+}
+
+@keyframes cadBG {
+    0%{background-position:23% 0%}
+    50%{background-position:78% 100%}
+    100%{background-position:23% 0%}
 }
