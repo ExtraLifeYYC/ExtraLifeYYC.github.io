@@ -21,8 +21,8 @@ Title: Currency
 		const $goal = $('#elGoal');
 		const $header = $('#extralifegoal');
 		$calcratio = ((result.sumDonations / result.fundraisingGoal) * 100).toFixed(0);
-		$raised.html(ELT.toCurrency(result.sumDonations * 1.31229 ));
-		$goal.html(ELT.toCurrency(result.fundraisingGoal * 1.31229 ));
+		$raised.html(ELT.toCurrency(result.sumDonations * {{ site.usd_cad }} ));
+		$goal.html(ELT.toCurrency(result.fundraisingGoal * {{ site.usd_cad }} ));
 		
 		
 		var bar = new ldBar(".mybar", {
