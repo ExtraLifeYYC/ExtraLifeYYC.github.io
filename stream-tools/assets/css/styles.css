@@ -140,6 +140,21 @@ p{
     100%{background-position:0% 49%}
 }
 
+.backgroundProd {
+    width: 1920px;
+    height: 1080px;
+    background: linear-gradient(218deg, #11455f, #066164);
+    background-size: 400% 400%;
+
+    animation: rockiesBG 31s ease infinite;
+}
+
+@keyframes rockiesBG {
+    0%{background-position:0% 49%}
+    50%{background-position:100% 52%}
+    100%{background-position:0% 49%}
+}
+
 .backgroundCAD {
     width: 1920px;
     height: 1080px;

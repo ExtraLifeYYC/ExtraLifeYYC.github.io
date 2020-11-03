@@ -80,6 +80,9 @@ layout = getUrlParameter('layout');
 // This changes toggles layout between webcam mode and non webcam mode
 if(layout == "nocam"){
     gsap.to("#cameraOne", {opacity:0});
+}else if(layout == "none"){
+    gsap.to("#cameraOne", {opacity:0});
+    gsap.to("#gameOne", {opacity:0});    
 }
 
 // This is the third message that shouts out the livecaster
@@ -90,18 +93,23 @@ if(streamer != ""){
     $("#messageThree").hide();
 }
 
-var tl = gsap.timeline({repeat: -1, delay: 1});
-tl.from("#messageOne", {opacity: 0, duration:0.5});
-tl.to("#messageOne", {opacity: 0, duration:0.5, delay: 30});
-tl.from("#messageTwo", {opacity: 0, duration:0.5});
-tl.to("#messageTwo", {opacity: 0, duration:0.5, delay: 30});
-// Animate the shoutout if a streamer name is provided
-if(streamer != ""){
-    tl.from("#messageThree", {opacity: 0, duration:0.5});
-    tl.to("#messageThree", {opacity: 0, duration:0.5, delay: 30}); 
-}
+if(layout == "none"){
+    gsap.to("#messageOne", {opacity: 0});
+    gsap.to("#messageTwo", {opacity: 0});
+    gsap.to("#rockies", {opacity: 0, delay:2});
+}else{
+    var tl = gsap.timeline({repeat: -1, delay: 1});
+    tl.from("#messageOne", {opacity: 0, duration:0.5});
+    tl.to("#messageOne", {opacity: 0, duration:0.5, delay: 30});
+    tl.from("#messageTwo", {opacity: 0, duration:0.5});
+    tl.to("#messageTwo", {opacity: 0, duration:0.5, delay: 30});
+    // Animate the shoutout if a streamer name is provided
+    if(streamer != ""){
+        tl.from("#messageThree", {opacity: 0, duration:0.5});
+        tl.to("#messageThree", {opacity: 0, duration:0.5, delay: 30}); 
+    }
 
-tl.play();
-
+    tl.play();
+};
 
 //now it's time for an animation loop
