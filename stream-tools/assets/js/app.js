@@ -61,7 +61,21 @@ const particlesJSON = {
     "retina_detect": true
 }
 
-particlesJS("particles-js", particlesJSON)
+//get the URL parameter 'streamer'
+
+const streamer = getUrlParameter('streamer');
+layout = getUrlParameter('layout');
+background = getUrlParameter('background');
+particles = getUrlParameter('particles');
+
+
+if (particles != "none"){
+    particlesJS("particles-js", particlesJSON);
+}
+
+if (background == "none"){
+    $(".backgroundProd").removeClass("backgroundProd");
+}
 
 gsap.from("#cameraOne", {border: 0, x: 210, width: 0, duration: 0.75, delay: 0.75});
 gsap.from("#gameOne", {border: 0, y: 550, height: 0, duration: 0.75, delay: 1});
@@ -69,13 +83,6 @@ gsap.from("#rockies", {opacity: 0, y: 50, duration: 0.75, delay: 0.95});
 gsap.from("#donationBar", {opacity: 0, y: -50, duration: 0.75, delay: 0.75});
 gsap.from("#totals", {opacity: 0, y: -50, duration: 0.75, delay: 0.75});
 gsap.from("#extralife", {opacity: 0, y: -50, duration: 0.75, delay: 0.95});
-
-
-
-//get the URL parameter 'streamer'
-
-const streamer = getUrlParameter('streamer');
-layout = getUrlParameter('layout');
 
 // This changes toggles layout between webcam mode and non webcam mode
 if(layout == "nocam"){
