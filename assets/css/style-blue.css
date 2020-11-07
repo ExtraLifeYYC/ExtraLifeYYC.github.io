@@ -9312,6 +9312,13 @@ lgx-zoomInUp
   /************** 767 GLOBAl USE***********/
   /************** 767 GLOBAl USE END***********/
 }
+
+#twitch-embed iframe {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+  padding-top: 10px;
+}
 /*767 END*/
 /* ----------------------------------------------------------------
       Custom, iPhone Retina  UP TO 480px
