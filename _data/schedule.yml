@@ -36,15 +36,6 @@ day:
         description: Have you got the buildings skills in minecraft? Can you build something amazing in only 3 hours? Contestants will be judged by our panel of minecraft gaming experts! Winners will be announced on the evening on Nov 7 at 11pm.
         location: twitch.tv/extralifeyyc
         registration: https://smash.gg/tournament/extra-life-rockies/event/extra-life-rockies-minecraft-build-off/overview
-      - name: Halo 5 2v2 Tournament
-        start: 4:30pm
-        end: 10:30pm MDT
-        closes: Nov 5, 2020 11:59PM MST
-        host: Extra Life YYC
-        image: /assets/img/event/halo.jpg
-        description: Join us for our Halo 5 2v2 tournament on Xbox One. Who will do us the honour of being Alberta Children's "Master Chief". Play for the glory, but ultimately play to heal kids!
-        location: twitch.tv/extralifeyyc2
-        registration: https://smash.gg/tournament/extra-life-rockies/event/extra-life-rockies-halo-5-2v2/overview
       - name: Fall Guys
         start: 8:30pm
         end: 10:30pm MDT
@@ -107,15 +98,6 @@ day:
         description: More details about this event are being formed. Join our discord or signup to our newsletter to be informed of updates.
         location: twitch.tv/albertaVGC
         registration: https://smash.gg/tournament/aesa-extra-life-game-day-2020/event/pokemon-sword-and-shield/overview
-      - name: Valorant Spike Rush Tournament
-        start: 8:30am
-        end: 1:30pm MST
-        closes: Nov 5, 2020 11:59PM MST
-        host: Extra Life YYC
-        image: /assets/img/event/valorant.jpg
-        description: Get you and your friends together in our Action packed, high-speed Valorant Spike Rush tournament. This tournament will be streamed to the official Extra Life YYC twitch channel with a 2 minute delay.
-        location: twitch.tv/extralifeyyc
-        registration: https://smash.gg/tournament/extra-life-rockies/event/extra-life-rockies-valorant-spike-rush-5v5/overview
       - name: Closing Ceremony
         start: 1:30pm
         end: 2:00pm MST
