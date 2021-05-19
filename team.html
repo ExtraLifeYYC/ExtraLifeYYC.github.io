@@ -1,0 +1,69 @@
+---
+layout: default
+title: Our Team
+permalink: /team
+hero_image: assets/img/switchbgbw.webp
+---
+<main class="main">
+    <section class="promo-primary promo-primary--elements">
+        <picture>
+            <source srcset="{{ page.hero_image }}" media="(min-width: 992px)"/><img class="img--bg" src="{{ page.hero_image }}" alt="img"/>
+        </picture>
+        <div class="promo-primary__description"> <span>Volunteer</span></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-auto">
+                    <div class="align-container">
+                        <div class="align-container__item"><span class="promo-primary__pre-title">Our Team</span>
+                            <h1 class="promo-primary__title"><span>Team</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section elements">
+        <div class="container">
+            <div class="row">
+                <div class="col-auto">
+                    <h4 class="elements__title">Guild Leadership</h4>
+                </div>
+            </div>
+            <div class="row">
+                {% for member in site.team %}
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <!-- item start	-->
+                    <div class="team-item team-item--rounded">
+                        <ul class="team-item__socials">
+                            {% if member.twitch %}<li><a href="{{ member.twitch }}"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>{% endif %}
+                            {% if member.twitter %}<li><a href="{{ member.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> {% endif %}
+                            {% if member.instagram %}<li><a href="{{ member.instagram }}"><i class="fa fa-instagram" aria-hidden="true"></i></a></li> {% endif %}
+                            {% if member.youtube %}<li><a href="{{ member.youtube }}"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>{% endif %}
+                            {% if member.facebook %}<li><a href="{{ member.facebook }}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>{% endif %}
+                        </ul>
+                        <div class="team-item__img-holder"><img class="img--layout" src="{% case member.style %}{% when 'yellow' %}assets/img/team_1.png{% when 'red' %}assets/img/team_2.png{% when 'pink' %}assets/img/team_3.png{% when 'green' %}assets/img/team_4.png{% when 'grey' %}assets/img/team_5.png{% when 'blue' %}assets/img/team_6.png{% when 'lilac' %}assets/img/team_7.png{% when 'purple' %}assets/img/team_8.png{% else %}assets/img/team_5.png{% endcase %}" alt="layout"/>
+                            <div class="team-item__img"><img class="img--bg" src="{{ member.image }}" alt="teammate"/></div>
+                        </div>
+                        <div class="team-item__description">
+                            <div class="team-item__name">{{ member.first_name }} {{ member.last_name }}</div>
+                            <div class="team-item__position">{{ member.position }}</div>
+                        </div>
+                    </div>
+                    <!-- item end -->
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- bottom bg start-->
+    <section class="bottom-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bottom-background__img"><img src="assets/img/bottom-bg.png" alt="img"/></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- bottom bg end-->
+</main>

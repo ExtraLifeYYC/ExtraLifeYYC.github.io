@@ -1,0 +1,102 @@
+---
+layout: default
+title: Events
+---
+<main class="main">
+    <section class="promo-primary">
+        <picture>
+            <source srcset="{{ site.blog_hero_image }}" media="(min-width: 992px)"/><img class="img--bg" src="{{ site.blog_hero_image }}" alt="img"/>
+        </picture>
+        <div class="promo-primary__description"> <span>Happiness</span></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-auto">
+                    <div class="align-container">
+                        <div class="align-container__item"><span class="promo-primary__pre-title">{{ site.blogsubtitle }}</span>
+                            <h1 class="promo-primary__title"><span>Our</span> <span>Events</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- events inner start-->
+    <section class="section events-inner"><img class="events-inner__bg" src="/assets/img/events_inner-bg.png" alt="img"/>
+        <div class="container">
+            <div class="row offset-30">
+                <div class="col-xl-10 offset-xl-1"><h2 style="margin-bottom:2rem;">Upcoming Events</h2></div>
+                {% ical url: https://sesh.fyi/calendar/98AtNsUKcpeFsCGzc8Zeie.ics reverse: true only_future: true limit: 5%}
+                <!-- ITEM START-->
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="upcoming-item">
+                        <div class="upcoming-item__date"><span>{{ event.dtstart | date: "%d" }}</span>{{ event.dtstart | date: "%b, '%y" }}</div>
+                        <div class="upcoming-item__body">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 col-xl-12">
+                                    <div class="upcoming-item__description">
+                                        <h6 class="upcoming-item__title"><a href="{{ event.url }}">{{ event.summary }}</a></h6>
+                                        <p>{{ event.description }}</p>
+                                        <div class="upcoming-item__details">
+                                            <p>
+                                                <svg class="icon">
+                                                    <use xlink:href="#clock"></use>
+                                                </svg> <strong>{{ event.dtstart | date: "%B %d" }},</strong> {{ event.dtstart | date: "%I:%M %P" }} - <strong>{{ event.dtend | date: "%B %d" }},</strong> {{ event.dtend | date: "%I:%M %P" }} 
+                                            </p>
+                                            <p>
+                                                <svg class="icon">
+                                                    <use xlink:href="#placeholder"></use>
+                                                </svg> <a href="{{site.discord_url}}" target="_blank">Details and RSVP at our Discord</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM END -->
+                {% endical %}
+                <div class="col-xl-10 offset-xl-1"><h2 style="margin-top:2.5rem; margin-bottom:2rem;">Past Events</h2></div>
+                
+                {% ical url: http://sesh.fyi/calendar/98AtNsUKcpeFsCGzc8Zeie.ics reverse: true only_past: true limit: 5%}
+                <!-- ITEM START-->
+                <div class="col-xl-10 offset-xl-1">
+                    <div class="upcoming-item">
+                        <div class="upcoming-item__date"><span>{{ event.dtstart | date: "%d" }}</span>{{ event.dtstart | date: "%b, '%y" }}</div>
+                        <div class="upcoming-item__body">
+                            <div class="row align-items-center">
+                                <div class="col-lg-12 col-xl-12">
+                                    <div class="upcoming-item__description">
+                                        <h6 class="upcoming-item__title"><a href="{{ event.url }}">{{ event.summary }}</a></h6>
+                                        <p>{{ event.description }}</p>
+                                        <div class="upcoming-item__details">
+                                            <p>
+                                                <svg class="icon">
+                                                    <use xlink:href="#clock"></use>
+                                                </svg> <strong>{{ event.dtstart | date: "%B %d" }},</strong> {{ event.dtstart | date: "%I:%M %P" }} - <strong>{{ event.dtend | date: "%B %d" }},</strong> {{ event.dtend | date: "%I:%M %P" }} 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ITEM END -->
+                {% endical %}
+            </div>
+        </div>
+    </section>
+    <!-- events inner end-->
+    <!-- bottom bg start-->
+    <section class="bottom-background background--brown">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="bottom-background__img"><img src="/assets/img/bottom-bg.png" alt="img"/></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- bottom bg end-->
+</main>

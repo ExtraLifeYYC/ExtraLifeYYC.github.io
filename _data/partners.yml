@@ -1,0 +1,11 @@
+---
+- name: Alberta Esports Association
+  website: https://esportsalberta.ca/
+  logo: /assets/img/AESA.png
+- name: Memory Express
+  website: https://memoryexpress.com
+  logo: /assets/img/memex.png
+- name: BCI Games
+  website: https://bci.games
+  logo: /assets/img/BCIGAMES.png
+---

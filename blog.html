@@ -1,0 +1,47 @@
+---
+title: News
+layout: postlist
+image: /assets/img/switchbgbw.webp
+pagination:
+  enabled: true
+permalink: '/blog'
+---
+    <div class="col-md-8 col-lg-9">
+        {% for post in paginator.posts %}
+        <div class="blog-post__top">
+            <div class="blog-post__img"><img class="img--bg" src="{{post.image}}" alt="img"/></div>
+            <div class="blog-post__description">
+                <div class="row">
+                    <div class="col-6"><span class="blog-post__name">{{ post.author }}</span></div>
+                    <div class="col-6 text-right"><span class="blog-post__date">{{ post.date | date: "%a, %b %d, %y"}}</span><span>
+                        <svg class="icon">
+                            <use xlink:href="#comment"></use>
+                        </svg> </span></div>
+                </div>
+            </div>
+        </div>
+        <h5 class="blog-post__title"><a href="{{post.url}}">{{ post.title }}</a></h5>
+        {{ post.excerpt }}
+        <a class="button promo-slider__button button--primary" style="width: 100%; margin-bottom:4rem;" href="{{ post.url}}" tabindex="0">Read More</a>
+
+        {% endfor %}
+
+        {% if paginator.total_pages > 1 %}
+        <div class="row">
+            <div class="col-12">
+                <!-- pagination start-->
+                <ul class="pagination">
+                    {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><li class="pagination__item pagination__item--prev"><i class="fa fa-angle-left" aria-hidden="true"></i><span>Older Posts</span>
+                    </li></a>
+                    {% endif %}
+                    {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><li class="pagination__item pagination__item--next"><span>Newer Posts</span><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </li></a>
+                    {% endif %}
+                </ul>
+                <!-- pagination end-->
+            </div>
+        </div>
+        {% endif %}
+    </div>

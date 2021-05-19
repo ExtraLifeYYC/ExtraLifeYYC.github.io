@@ -1,0 +1,66 @@
+---
+layout: default
+title: volunteer
+guild_photo: assets/img/guild.webp
+pretitle: Extra Life Guilds
+title: Volunteering
+title_2: Saves Kids
+description: >-
+  What is an Extra Life Guild? An Extra Life Guild is a group of passionate Extra Lifers who want to get more 
+  involved and help strengthen the Extra Life community on a local level. The Calgary Guild meets regularly to 
+  find ways to help grow the Extra Life movement by registering new Extra Lifers, fundraising for the Alberta 
+  Children's Hospital and sharing the Extra Life movement. Guild members will have the opportunity to attend 
+  local gaming industry events and conferences, hang out with other Extra Life community members, and meet 
+  some of the kiddos treated at our local children's hospital!</p><p>We are always welcoming of new volunteers. If you're 
+  thinking of volunteering, just fill out the form below, tell us a little about yourself and why you Extra Life. 
+  Extra Life Calgary is about having fun first. There is no volunteer work that is too small.
+---
+<main class="main">
+    <section class="promo-primary">
+        <picture>
+            <source srcset="{{ site.blog_hero_image }}" media="(min-width: 992px)"/><img class="img--bg" src="{{ site.blog_hero_image }}" alt="img"/>
+        </picture>
+        <div class="promo-primary__description"> <span>Compassion</span></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-auto">
+                    <div class="align-container">
+                        <div class="align-container__item"><span class="promo-primary__pre-title">{{ site.blogsubtitle }}</span>
+                            <h1 class="promo-primary__title"><span>Become</span> <span>a Volunteer</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section start-->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-xl-5">
+                    <div class="img-box"><img class="img--layout" src="assets/img/about_layout-reverse.png" alt="img"/>
+                        <div class="img-box__img"><img class="img--bg" src="{{ page.guild_photo }}" alt="img"/></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 offset-xl-1">
+                    <div class="heading heading--primary"><span class="heading__pre-title">{{ page.pretitle }}</span>
+                        <h2 class="heading__title"><span>{{ page.title }}</span> <span>{{ page.title_2 }}</span></h2>
+                    </div>
+                {{ page.description }}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section end-->
+    <!-- section start-->
+    <section class="section forms-section no-padding-top no-padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <script type="text/javascript" src="https://form.jotform.com/jsform/210806461333044"></script>
+                </div>
+            </div>
+        </div><img class="forms-section__bg" src="assets/img/volunteer-2.png" alt="img"/>
+    </section>
+    <!-- section end-->
+</main>

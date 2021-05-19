@@ -1,39 +1,63 @@
-<!--HEADER-->
-<header>
-    <div id="lgx-header" class="lgx-header">
-        <div class="lgx-header-position lgx-header-position-white lgx-header-position-fixed "> <!--lgx-header-position-fixed lgx-header-position-white lgx-header-fixed-container lgx-header-fixed-container-gap lgx-header-position-white-->
-            <div class="lgx-container"> <!--lgx-container-fluid-->
-                <nav class="navbar navbar-default lgx-navbar">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <div class="lgx-logo">
-                            <a href="/" class="lgx-scroll">
-                                <img src="assets/img/extra-life-yyc-guild-logo.svg" alt="Extra Life YYC Rockies 2020 Game Day Logo" style="width:160px;height:auto"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <div class="lgx-nav-right navbar-right">
-                            <div class="lgx-cart-area">
-                                <a class="lgx-btn lgx-btn-red" href="https://www.eventbrite.ca/e/extra-life-rockies-tickets-121126028211"><span>Register Today</span></a>
-                            </div>
-                        </div>
-                        <ul class="nav navbar-nav lgx-nav navbar-right">
-                            <li><a class="lgx-scroll" href="#lgx-about">About</a></li>
-                            <li><a class="lgx-scroll" href="#lgx-speakers">Hosts</a></li>
-                            <li><a class="lgx-scroll" href="#lgx-schedule">Schedule</a></li>
-                            <li><a class="lgx-scroll" href="#lgx-sponsors">Sponsors</a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </nav>
+<div class="page-wrapper">
+    <!-- aside dropdown start-->
+    <div class="aside-dropdown">
+        <div class="aside-dropdown__inner"><span class="aside-dropdown__close">
+            <svg class="icon">
+                <use xlink:href="#close"></use>
+            </svg></span>
+            <div class="aside-dropdown__item d-lg-none d-block">
             </div>
-            <!-- //.CONTAINER -->
+            <div class="aside-dropdown__item">
+                <!-- aside menu start-->
+                <ul class="aside-menu">
+                    {% for item in site.data.menu %}
+                    <li class="aside-menu__item"><a class="aside-menu__link" href="{{ item.link }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                </ul>
+                <!-- aside menu end-->
+                <div class="aside-inner"><span class="aside-inner__title">Email</span><a class="aside-inner__link" href="mailto:{{ site.email }}">{{site.email}}</a></div>
+                <ul class="aside-socials">
+                    {% if site.facebook_url %}<li class="aside-socials__item"><a class="aside-socials__link" href="{{ site.facebook_url}}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>{% endif %}
+                    {% if site.instagram_url %}<li class="aside-socials__item"><a class="aside-socials__link" href="{{ site.instagram_url }}"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>{% endif %}
+                    {% if site.twitter_url %}<li class="aside-socials__item"><a class="aside-socials__link" href="{{ site.twitter_url }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>{% endif %}
+                    {% if site.github_url %}<li class="aside-socials__item"><a class="aside-socials__link" href="{{ site.github_url }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>{% endif %}
+                    {% if site.twitch_url %}<li class="aside-socials__item"><a class="aside-socials__link" href="{{ site.twitch_url }}"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>{% endif %}
+                </ul>
+            </div>
+            <div class="aside-dropdown__item"><a class="button button--squared" href="{{ site.extra_life_join_url }}"><span>Join Extra Life</span></a></div>
         </div>
     </div>
-</header>
-<!--HEADER END-->
+    <!-- aside dropdown end-->
+    <!-- header start-->
+    <header class="header header--front_2">
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-between">
+                <div class="col-auto d-flex align-items-center">
+                    <div class="dropdown-trigger d-none d-sm-block">
+                        <div class="dropdown-trigger__item"></div>
+                    </div>
+                    <div class="header-logo"><a class="header-logo__link" href="index.html"><img class="header-logo__img" src="{{ site.logo }}" alt="logo"/></a></div>
+                </div>
+                <div class="col-auto">
+                    <!-- main menu start-->
+                    <nav>
+                        <ul class="main-menu">
+                            {% assign navurl = page.url | remove: 'index.html' %}
+                            {% for item in site.data.menu %}
+                                <li class="main-menu__item {% if item.link == navurl %}main-menu__item--active{% endif %}"><a class="main-menu__link" href="{{ item.link }}"><span>{{ item.title }}</span></a></li>
+                            {% endfor %}
+                        </ul>
+                        </ul>
+                    </nav>
+                    <!-- main menu end-->
+                </div>
+                <div class="col-auto d-flex align-items-center">
+                   <a class="button button--squared" href="{{ site.extra_life_join_url }}"><span>Join Extra Life</span></a>
+                    <div class="dropdown-trigger d-block d-sm-none">
+                        <div class="dropdown-trigger__item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end-->

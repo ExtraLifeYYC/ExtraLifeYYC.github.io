@@ -1,7 +1,7 @@
 teamCode = getUrlParameter("teamid");
 
 if(teamCode == ""){
-	teamCode = 50312
+	teamCode = 55849
 }
 ELT.settings = {
 	

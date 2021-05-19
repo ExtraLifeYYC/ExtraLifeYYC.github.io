@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include header.html %}
+    <body>
+    {% include navigation.html %}
+    <main class="main">
+        <section class="promo-primary">
+            <picture>
+                <source srcset="{{ site.blog_hero_image }}" media="(min-width: 992px)"/><img class="img--bg" src="{{ site.blog_hero_image }}" alt="img"/>
+            </picture>
+            <div class="promo-primary__description"> <span>Headlines</span></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="align-container">
+                            <div class="align-container__item"><span class="promo-primary__pre-title">{{ site.blogsubtitle }}</span>
+                                <h1 class="promo-primary__title"><span>{{ site.blogtitle }}</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- blog post start-->
+    <section class="section blog-post">
+        <div class="container">
+            <div class="row">
+    {{ content }}
+    {% include blogsidebar.html %}
+        </div>
+        </div>
+        </section>
+
+        <!-- bottom bg start-->
+        <section class="bottom-background background--brown">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bottom-background__img"><img src="/assets/img/bottom-bg.png" alt="img"/></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- bottom bg end-->
+    </main>
+    {% include footer.html %}
+</html>

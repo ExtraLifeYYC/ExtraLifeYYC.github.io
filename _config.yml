@@ -18,30 +18,47 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Extra Life Calgary Guild
-email: leadership@extralifeyyc.com
+title: Calgary Extra Life Guild
+logo: /assets/img/extra-life-calgary-official-guild.webp
+logo_footer: /assets/img/extra-life-calgary-badge.webp
+address: Calgary, Alberta, Canada
+email: extralifecalgary@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Extra Life is a 24-hour game-a-thon charity event that unites 
-  thousands of gamers around the world to play games in support 
-  of their local Children's Miracle Network hospital. 
-keywords: Extra Life, Calgary, Rockies, Game Day Event, Guild, YYC
-author: Extra Life YYC
+  Gamers decided to put our hobby to good use and raise money for our local children's hospitals. We're here to raise awareness for Extra Life.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://extralifeyyc.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ExtralifeYYC
-github_username:  ExtraLifeYYC
-usd_cad: 1.31556
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+facebook_url: https://www.facebook.com/extralifeyyc
+twitter_url: https://twitter.com/ExtralifeYYC
+github_url:  https://github.com/extralifeyyc
+twitch_url: https://twitch.tv/extralifeyyc
+instagram_url: https://www.instagram.com/extralifeyyc/
+discord_url: https://discord.gg/rGhv8DU
+
+extra_life_join_url: https://www.extra-life.org/index.cfm?fuseaction=register.start&eventID=550&teamID=55849
+extra_life_donate_url: 
+
+blogsubtitle: Extra Life YYC
+blogtitle: News
+blog_hero_image: /assets/img/switchbgbw.webp
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/blog/:num/'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-get-json
+  - jekyll-ical-tag
+  - jekyll-paginate-v2
 
-# Get JSON Currency configuration
-jekyll_get_json:
-  - data: currencyConvert
-    json: 'https://free.currconv.com/api/v7/convert?q=USD_CAD&compact=ultra&apiKey=2853d963088f023dd932'
+collections:
+  - featured
+  - team
+  - causes
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -51,12 +68,13 @@ jekyll_get_json:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - template/
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/

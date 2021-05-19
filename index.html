@@ -1,0 +1,215 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+title: Home
+layout: default
+about_description: We help raise money for the Alberta Children's Hospital Foundation by playing video games! Every year we create and host video gaming events in the community and host <strong>Extra Life Rockies</strong> a 24 hour fundraiser event that we run with the support of local businesses and gaming communities.
+raised_last_year: 206
+raised_total: 1.2
+---
+<main class="main">
+    <!-- promo start-->
+    <section class="promo promo--front_2">
+        <div class="promo-slider">
+            {% for feature in site.featured %}
+            <div class="promo-slider__item promo-slider__item--style-2">
+                <picture>
+                <source srcset="{{ feature.background }}" media="(min-width: 835px)"/>
+                    <source srcset="{{ feature.background_mobile }}" media="(min-width: 376px)"/><img class="img--bg" src="{{ feature.background }}" alt="img"/>
+                </picture>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-7">
+                            <div class="align-container">
+                                <div class="align-container__item">
+                                    <div class="promo-slider__wrapper-1">
+                                        <h2 class="promo-slider__title"><span>{{ feature.header }}</span><br/><span>{{ feature.headertwo }}</span></h2>
+                                    </div>
+                                    <div class="promo-slider__wrapper-2">
+                                        <p class="promo-slider__subtitle">{{ feature.description }}</p>
+                                    </div>
+                                    <div class="promo-slider__wrapper-3"><a class="button promo-slider__button button--primary" href="{{ feature.button_link }}">{{ feature.button_text }}</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div><a class="anchor promo-pannel__anchor" href="#about"> <span>Scroll Down</span></a>
+        <!-- promo pannel start-->
+        <div class="promo-pannel">
+            <div class="promo-pannel__video"><img class="img--bg" src="assets/img/extralifevid2.webp" alt="image"/><a class="video-trigger" href="https://youtu.be/D7kfCS0ruhc"><span>What is Extra Life?</span><i class="fa fa-play" aria-hidden="true"></i></a></div>
+        </div>
+        <!-- promo pannel end-->
+        {% assign feature_count = site.featured | size %}
+        {% if feature_count > 1 %}
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- slider nav start-->
+                    <div class="slider__nav slider__nav--promo">
+                        <div class="promo-slider__count"></div>
+                        <div class="slider__arrows">
+                            <div class="slider__prev"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="slider__next"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider nav end-->
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </section>
+    <!-- promo end-->
+    <!-- causes start-->
+    <section class="section causes"><img class="causes__bg" src="assets/img/causes_img.png" alt="img"/>
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-xl-5">
+                    <div class="heading heading--primary"><span class="heading__pre-title">About Us</span>
+                        <h2 class="heading__title"><span>Play Games</span> <span>Heal Kids</span></h2>
+                        <p>{{ page.about_description }}</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 offset-xl-1 d-none d-xl-block">
+                    <div class="row offset-margin">
+                        <div class="col-6">
+                            <div class="counter-item counter-item--style-3">
+                                <div class="counter-item__top">
+                                    <h6 class="counter-item__title">Amount We Raised in {{ site.time | date: "%Y" | minus:1}}</h6>
+                                </div>
+                                <div class="counter-item__lower"><span class="js-counter">{{ page.raised_last_year}}</span><span>k</span></div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="counter-item counter-item--style-3">
+                                <div class="counter-item__top">
+                                    <h6 class="counter-item__title">Total Raised Since 2010</h6>
+                                </div>
+                                <div class="counter-item__lower"><span class="js-counter">{{ page.raised_total }}</span><span>mil</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-end margin-bottom">
+                <div class="col-sm-6"><a class="button button--primary" href="{{ site.extra_life_join_url }}">Join Our Team on Extra-Life.org</a></div>
+            </div>
+            <div class="row align-items-end margin-bottom">
+                <div class="col-sm-6"><h4>Causes your donations help with</h4></div>
+                <div class="col-sm-6 d-flex justify-content-sm-end">
+                    <!-- slider nav start-->
+                    <div class="slider__nav causes-slider__nav">
+                        <div class="slider__arrows">
+                            <div class="slider__prev"><i class="fa fa-chevron-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="slider__next"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slider nav end-->
+                </div>
+            </div>
+        </div>
+        <div class="causes-holder offset-margin">
+            <div class="causes-holder__wrapper">
+                <div class="causes-slider offset-margin">
+                    {% for cause in site.causes %}
+                    <div class="causes-slider__item">
+                        <div class="causes-item causes-item--primary">
+                            <div class="causes-item__body">
+                                <div class="causes-item__top">
+                                    <h6 class="causes-item__title"> <a href="{{ cause.link }}">{{ cause.title }}</a></h6>
+                                    <p>{{ cause.description }}</p>
+                                </div>
+                                <div class="causes-item__img">
+                                    <div class="causes-item__badge" style="background-color: {% case cause.tag %}{% when 'Mental Health' %}#49C2DF {% when 'Family Services' %}#F36F8F{% when 'Research' %}#2EC774{% else %}#F8AC3A{% endcase %} ">{{ cause.tag }}</div><img class="img--bg" src="{{ cause.image }}" alt="img"/>
+                                </div>
+                                <a class="button causes-item__button button--primary" style="margin-left:0;" href="{{ cause.link }}">Learn more @ ACHF</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- causes end-->
+    <!-- section start-->
+    <section class="section action-section">
+        <div class="jarallax">
+            <picture>
+                <source srcset="assets/img/extralifeyyc.webp" media="(min-width: 992px)"/><img class="jarallax-img" src="assets/img/extralifeyyc.webp" alt="img"/>
+            </picture>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="action-section__title">Join our Amazing Volunteer Team</h2>
+                    <p class="action-section__text">Wether you want to work on your graphic design skills, organize tournaments or just play games with friends in the community. We have volunteering opportunities that match your hobbies with a diverse leadership team that makes volunteering fun!</p><a class="action-section__button button button--primary" href="/volunteer">Become a volunteer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section end-->
+    <!-- blog start-->
+    <section class="section blog blog--front_2"><img class="blog__bg" src="assets/img/blog_bg-2.png" alt="img"/>
+        <div class="container">
+            <div class="row margin-bottom">
+                <div class="col-12">
+                    <div class="heading heading--primary heading--center"><span class="heading__pre-title">News</span>
+                        <h2 class="heading__title no-margin-bottom"><span>ELYYC</span> <span>Blog</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row offset-margin">
+                {% for post in site.posts limit:3 %}
+                <div class="col-md-6 col-xl-4">
+                    <div class="blog-item blog-item--style-1">
+                        <div class="blog-item__img"><img class="img--bg" src="{{ post.image }}" alt="img"/></div>
+                        <div class="blog-item__content">
+                            <h6 class="blog-item__title"><a href="{{ post.url }}">{{ post.title }}</a></h6>
+                            <p>{{ post.content | truncatewords: 30 }}</p>
+                            <div class="blog-item__details"><span class="blog-item__date">{{ post.date | date: "%a, %b %d, %y"}}</span></div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!-- blog end-->
+    <!-- donors start-->
+    <section class="section donors no-padding-top">
+        <div class="container">
+            <div class="row margin-bottom">
+                <div class="col-12">
+                    <div class="heading heading--primary heading--center"><span class="heading__pre-title">Contributing Members</span>
+                        <h2 class="heading__title no-margin-bottom"><span>Who Help</span> <span>Us</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- donors slider start-->
+                    <div class="slider-holder">
+                        <div class="donors-slider donors-slider--style-1">
+                            {% for partner in site.data.partners %}
+                            <div class="donors-slider__item">
+                                <div class="donors-slider__img"><a href="{{ partner.website }}"><img src="{{ partner.logo }}" alt="{{ partner.name }}"/></a></div>
+                            </div>
+                            {% endfor %}
+                           
+                        </div>
+                    </div>
+                    <!-- donors slider end-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- donors end--><img class="front-2__bottom-img" src="assets/img/volunteer-2.png" alt="img"/>
+</main>
