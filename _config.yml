@@ -50,6 +50,7 @@ pagination:
   sort_reverse: true
 
 # Build settings
+timezone: America/Edmonton
 plugins:
   - jekyll-feed
   - jekyll-ical-tag
