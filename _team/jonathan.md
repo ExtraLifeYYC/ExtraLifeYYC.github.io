@@ -2,7 +2,7 @@
 first_name: SRAF
 last_name: ''
 position: Community Leader
-image: assets/img/Jon.webp
+image: "/assets/img/sraf.png"
 twitter: ''
 twitch: ''
 youtube: ''
