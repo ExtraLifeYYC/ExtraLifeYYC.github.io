@@ -1,0 +1,72 @@
+---
+label: Team Member
+hide_body: true
+display_field: first_name
+fields:
+- type: text
+  name: first_name
+  label: First Name
+  config:
+    required: true
+  default: First Name
+- type: text
+  name: last_name
+  label: Last Name
+  description: Your Last Name
+- type: text
+  name: position
+  label: Role
+  description: What role is this member performing within the guild
+  config:
+    required: true
+- type: file
+  name: image
+  label: Photo
+  description: please upload a square photo that is 512x512px minimum
+- type: text
+  name: twitter
+  label: Twitter URL
+  description: The full URL of your twitter
+- type: text
+  name: twitch
+  label: Twitch
+  description: The full URL of your Twitch
+- type: text
+  name: youtube
+  label: YouTube
+  description: The full URL of your YouTube
+- type: text
+  name: facebook
+  label: Facebook
+  description: The full URL of your Facebook
+- type: text
+  name: instagram
+  label: Instagram
+  description: The full URL of your Instagram
+- name: style
+  type: select
+  default: green
+  config:
+    required: true
+    options:
+    - yellow
+    - red
+    - pink
+    - green
+    - grey
+    - blue
+    - lilac
+    - purple
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
+  description: Choose the background color to go behind the team member profile photo
+pages:
+- _team/ben-fleming.md
+- _team/jason-m.md
+- _team/jonathan.md
+- _team/teagan.md
+- _team/todd-willsie.md

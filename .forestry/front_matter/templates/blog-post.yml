@@ -1,0 +1,36 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: post
+- type: text
+  name: title
+  label: Title
+  description: title of the article
+- type: text
+  name: author
+  label: Author
+  description: Name of the person writing the article
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+  default: now
+- type: file
+  name: image
+  label: Image
+  description: Blog images should be 769px wide by 535px high
+- type: text
+  name: excerpt_separator
+  label: excerpt_separator
+  default: "<!--more-->"
+  hidden: true
+pages:
+- _posts/2021-04-01-A-letter-from-the-calgary-extra-life-guild-president.md
