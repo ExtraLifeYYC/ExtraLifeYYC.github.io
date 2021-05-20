@@ -6,7 +6,7 @@ webhook_url:
 sections:
 - type: directory
   path: _featured
-  label: Featured
+  label: Front Page Hero
   create: all
   match: "**/*"
 - type: directory
@@ -14,9 +14,11 @@ sections:
   label: Team
   create: all
   match: "**/*"
+  templates:
+  - team-member
 - type: directory
   path: _causes
-  label: Causes
+  label: ACHF Causes
   create: all
   match: "**/*"
 - type: jekyll-posts
