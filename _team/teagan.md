@@ -2,7 +2,7 @@
 first_name: Jackie
 last_name: ''
 position: Volunteer Experience Manager
-image: assets/img/jackie.webp
+image: "/assets/img/jackie.png"
 twitter: https://twitter.com/skyknightjackie
 twitch: https://twitch.tv/jackieskyknight
 youtube: ''
