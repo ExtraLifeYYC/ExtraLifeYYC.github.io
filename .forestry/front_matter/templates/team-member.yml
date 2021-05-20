@@ -1,0 +1,34 @@
+---
+label: Team Member
+hide_body: false
+fields:
+- type: text
+  name: first_name
+  label: first_name
+- type: text
+  name: last_name
+  label: last_name
+- type: text
+  name: position
+  label: position
+- type: file
+  name: image
+  label: image
+- type: text
+  name: twitter
+  label: twitter
+- type: text
+  name: twitch
+  label: twitch
+- type: text
+  name: youtube
+  label: youtube
+- type: text
+  name: facebook
+  label: facebook
+- type: text
+  name: instagram
+  label: instagram
+- type: text
+  name: style
+  label: style
