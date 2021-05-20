@@ -4,31 +4,62 @@ hide_body: false
 fields:
 - type: text
   name: first_name
-  label: first_name
+  label: First Name
+  config:
+    required: true
+  default: First Name
 - type: text
   name: last_name
-  label: last_name
+  label: Last Name
+  description: Your Last Name
 - type: text
   name: position
-  label: position
+  label: Role
+  description: What role is this member performing within the guild
+  config:
+    required: true
 - type: file
   name: image
-  label: image
+  label: Photo
+  description: please upload a square photo that is 512x512px minimum
 - type: text
   name: twitter
-  label: twitter
+  label: Twitter URL
+  description: The full URL of your twitter
 - type: text
   name: twitch
-  label: twitch
+  label: Twitch
+  description: The full URL of your Twitch
 - type: text
   name: youtube
-  label: youtube
+  label: YouTube
+  description: The full URL of your YouTube
 - type: text
   name: facebook
-  label: facebook
+  label: Facebook
+  description: The full URL of your Facebook
 - type: text
   name: instagram
-  label: instagram
-- type: text
-  name: style
-  label: style
+  label: Instagram
+  description: The full URL of your Instagram
+- name: style
+  type: select
+  default: green
+  config:
+    required: true
+    options:
+    - yellow
+    - red
+    - pink
+    - green
+    - grey
+    - blue
+    - lilac
+    - purple
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
+  description: Choose the background color to go behind the team member profile photo
