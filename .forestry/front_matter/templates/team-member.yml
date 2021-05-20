@@ -65,6 +65,7 @@ fields:
   label: Style
   description: Choose the background color to go behind the team member profile photo
 pages:
+- _team/ben-fleming.md
 - _team/jason-m.md
 - _team/jonathan.md
 - _team/teagan.md
