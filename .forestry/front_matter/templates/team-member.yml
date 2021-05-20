@@ -1,6 +1,7 @@
 ---
 label: Team Member
-hide_body: false
+hide_body: true
+display_field: first_name
 fields:
 - type: text
   name: first_name
