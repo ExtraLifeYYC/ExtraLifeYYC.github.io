@@ -1,10 +1,11 @@
 ---
 layout: post
 author: Todd Willsie
-title:  "A Letter From YYC Guild President"
-date:   2021-04-01 13:11:55 -0700
-image: /assets/img/todd-guild-president.png
-excerpt_separator: <!--more-->
+title: A Letter From YYC Guild President
+date: 2021-04-01 20:11:55 +0000
+image: "/assets/img/todd-guild-president.png"
+excerpt_separator: "<!--more-->"
+
 ---
 2020 was an exciting and unique year for Extra Lifers in Calgary and Southern Alberta. While local businesses, government offices, and people kept their distance to keep friends and family safe, Southern Albertans opened their hearts for the Alberta Children's Hospital. In 2020, Albertans raised $207,895 for the Alberta Children's Hospital. All of our fundraisers, community partners, and volunteers should feel proud of the hard work they've done!
 <!--more-->

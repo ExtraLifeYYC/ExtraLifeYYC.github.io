@@ -32,3 +32,5 @@ fields:
   label: excerpt_separator
   default: "<!--more-->"
   hidden: true
+pages:
+- _posts/2021-04-01-A-letter-from-the-calgary-extra-life-guild-president.md
