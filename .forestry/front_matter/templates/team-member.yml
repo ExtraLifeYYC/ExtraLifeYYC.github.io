@@ -64,3 +64,5 @@ fields:
       path: 
   label: Style
   description: Choose the background color to go behind the team member profile photo
+pages:
+- _team/todd-willsie.md
