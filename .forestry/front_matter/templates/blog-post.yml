@@ -5,18 +5,30 @@ fields:
 - type: text
   name: layout
   label: layout
-- type: text
-  name: author
-  label: author
+  hidden: true
+  default: post
 - type: text
   name: title
-  label: title
+  label: Title
+  description: title of the article
+- type: text
+  name: author
+  label: Author
+  description: Name of the person writing the article
+  config:
+    required: true
 - type: datetime
   name: date
-  label: date
+  label: Date
+  config:
+    required: true
+  default: now
 - type: file
   name: image
-  label: image
+  label: Image
+  description: Blog images should be 769px wide by 535px high
 - type: text
   name: excerpt_separator
   label: excerpt_separator
+  default: "<!--more-->"
+  hidden: true
