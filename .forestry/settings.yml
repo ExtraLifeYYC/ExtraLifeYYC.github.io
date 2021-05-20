@@ -24,6 +24,8 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
+  templates:
+  - blog-post
 - type: jekyll-pages
   label: Pages
   create: all
