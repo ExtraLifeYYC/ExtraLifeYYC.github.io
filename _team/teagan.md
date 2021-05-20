@@ -1,14 +1,14 @@
 ---
 first_name: Jackie
-last_name: 
+last_name: ''
 position: Volunteer Experience Manager
 image: assets/img/jackie.webp
-twitter: https://twitter.com/skyknightjackie 
+twitter: https://twitter.com/skyknightjackie
 twitch: https://twitch.tv/jackieskyknight
-youtube:
-facebook:
-instagram:
+youtube: ''
+facebook: ''
+instagram: ''
 style: lilac
----
 
+---
 styles: yellow, red, pink, green, grey, blue, lilac, purple
