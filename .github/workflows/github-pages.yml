@@ -5,7 +5,7 @@ on:
     branches:
       - development # or main after October 2020
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 */6 * * *"
 
 jobs:
   github-pages:
