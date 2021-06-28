@@ -22,8 +22,8 @@ Title: Currency for Overlay
 		const $goal = $('#elGoal');
 		const $header = $('#extralifegoal');
 		$calcratio = ((result.sumDonations / result.fundraisingGoal) * 100).toFixed(0);
-		$raised.html(ELT.toCurrency(result.sumDonations * {{ site.usd_cad }} ));
-		$goal.html(ELT.toCurrency(result.fundraisingGoal * {{ site.usd_cad }} ));
+		$raised.html(ELT.toCurrency(result.sumDonations * {{ site.data.exchrt.USD_CAD }} ));
+		$goal.html(ELT.toCurrency(result.fundraisingGoal * {{ site.data.exchrt.USD_CAD }} ));
 		
 		
 		var bar = new ldBar(".mybar", {

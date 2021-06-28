@@ -38,7 +38,9 @@ discord_url: https://discord.gg/rGhv8DU
 extra_life_join_url: https://www.extra-life.org/index.cfm?fuseaction=register.start&eventID=550&teamID=55849
 extra_life_donate_url: 
 
-usd_cad: 1.2308808
+jekyll_get_json:
+  - data: exchrt
+    json: https://free.currconv.com/api/v7/convert?q=USD_CAD&compact=ultra&apiKey=f6cfb18960799416d2b3
 blogsubtitle: Extra Life YYC
 blogtitle: News
 blog_hero_image: /assets/img/switchbgbw.webp
@@ -56,6 +58,7 @@ plugins:
   - jekyll-feed
   - jekyll-ical-tag
   - jekyll-paginate-v2
+  - jekyll-get-json
 
 collections:
   - featured
