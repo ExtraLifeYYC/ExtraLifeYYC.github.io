@@ -38,6 +38,7 @@ discord_url: https://discord.gg/rGhv8DU
 extra_life_join_url: hhttps://www.extra-life.org/index.cfm?fuseaction=donorDrive.team&teamID=59891
 extra_life_donate_url: 
 
+
 jekyll_get_json:
   - data: exchrt
     json: https://free.currconv.com/api/v7/convert?q=USD_CAD&compact=ultra&apiKey=f6cfb18960799416d2b3
