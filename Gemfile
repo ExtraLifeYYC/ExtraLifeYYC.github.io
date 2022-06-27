@@ -13,7 +13,7 @@ gem "minima", "~> 2.5"
 
 # this plugin will create our events page from our discord channel
 gem 'jekyll-paginate-v2', '~> 3.0'
-gem 'jekyll-ical-tag', '~> 1.3'
+gem 'jekyll-ical-tag', '~> 1.3.3'
 
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
