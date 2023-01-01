@@ -1,7 +1,7 @@
 ---
 title: Research in Action
-description: As the world races to contain the spread of COVID-19, scientists are leading the path forward. Showing how research plays a crucial role in medical advancement.
-link: https://www.childrenshospital.ab.ca/site/SPageNavigator/news/UnderstandingCOVID19AndKids.html
+description: More than 1,000 researchers, trainees and staff have committed to advancing knowledge and discovering cures specifically for children.
+link: https://www.childrenshospital.ab.ca/your-impact/where-your-money-goes/highest-priority-needs/research/
 image: assets/img/research.webp
 tag: Research
 ---
