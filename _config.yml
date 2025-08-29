@@ -29,14 +29,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 facebook_url: https://www.facebook.com/extralifeyyc
-twitter_url: https://twitter.com/ExtralifeYYC
+twitter_url: https://bsky.app/profile/extralifeyyc.bsky.social
 github_url:  https://github.com/extralifeyyc
 twitch_url: https://twitch.tv/extralifeyyc
 instagram_url: https://www.instagram.com/extralifeyyc/
 discord_url: https://discord.gg/rGhv8DU
 
-extra_life_join_url: https://www.extra-life.org/index.cfm?fuseaction=register.start&eventID=554&teamID=66596
-extra_life_donate_url: https://www.extra-life.org/index.cfm?fuseaction=donorDrive.team&teamID=66596
+extra_life_join_url: https://www.extra-life.org/index.cfm?fuseaction=register.start&eventID=559&teamID=69784
+extra_life_donate_url: https://www.extra-life.org/index.cfm?fuseaction=donorDrive.team&teamID=69784
 
 
 jekyll_get_json:
